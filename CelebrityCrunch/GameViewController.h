@@ -7,8 +7,22 @@
 //
 
 #import <UIKit/UIKit.h>
+@protocol GameViewDelegate <NSObject>
+-(NSUInteger)updateScore;
+@end
 #import <SpriteKit/SpriteKit.h>
+#import "GameScene.h"
+@protocol GameViewDelegate;
 
-@interface GameViewController : UIViewController
+@interface GameViewController : UIViewController<SKSceneDelegate, GameSceneDelegate>
+
+@property(nonatomic,weak)id <GameViewDelegate> scoreDelegate;
+
 
 @end
+
+
+
+
+
+

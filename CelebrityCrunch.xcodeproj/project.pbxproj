@@ -7,15 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		08E057CB2E4418FE70453F44 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C98DF52F36A1FACA6FD1E230 /* libPods.a */; };
+		5835696C1A4913BE002D4F84 /* actors2.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 5835696B1A4913BE002D4F84 /* actors2.atlas */; };
+		58391FD91A05C18200AAAF52 /* RWTLevel.m in Sources */ = {isa = PBXBuildFile; fileRef = 58391FD81A05C18200AAAF52 /* RWTLevel.m */; };
 		5847CA551A02EB45003CDE56 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5847CA541A02EB45003CDE56 /* main.m */; };
 		5847CA581A02EB45003CDE56 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5847CA571A02EB45003CDE56 /* AppDelegate.m */; };
 		5847CA5B1A02EB45003CDE56 /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 5847CA5A1A02EB45003CDE56 /* GameScene.m */; };
-		5847CA5D1A02EB45003CDE56 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5847CA5C1A02EB45003CDE56 /* GameScene.sks */; };
 		5847CA601A02EB45003CDE56 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5847CA5F1A02EB45003CDE56 /* GameViewController.m */; };
 		5847CA631A02EB45003CDE56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5847CA611A02EB45003CDE56 /* Main.storyboard */; };
-		5847CA651A02EB45003CDE56 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5847CA641A02EB45003CDE56 /* Images.xcassets */; };
 		5847CA681A02EB45003CDE56 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5847CA661A02EB45003CDE56 /* LaunchScreen.xib */; };
 		5847CA741A02EB46003CDE56 /* CelebrityCrunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5847CA731A02EB46003CDE56 /* CelebrityCrunchTests.m */; };
+		5847CA831A02EBA9003CDE56 /* RWTActor.m in Sources */ = {isa = PBXBuildFile; fileRef = 5847CA7E1A02EBA9003CDE56 /* RWTActor.m */; };
+		5847CA841A02EBA9003CDE56 /* RWTMovie.m in Sources */ = {isa = PBXBuildFile; fileRef = 5847CA801A02EBA9003CDE56 /* RWTMovie.m */; };
+		5847CA911A02EFD5003CDE56 /* RWTTile.m in Sources */ = {isa = PBXBuildFile; fileRef = 5847CA901A02EFD5003CDE56 /* RWTTile.m */; };
+		584925B81A29840100DC178A /* movieToActor.json in Resources */ = {isa = PBXBuildFile; fileRef = 584925B71A29840100DC178A /* movieToActor.json */; };
+		585786B41A64A5E400AFBC19 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 585786B31A64A5E400AFBC19 /* Images.xcassets */; };
+		589B3D171A296CAB003A5367 /* actorTomovie.json in Resources */ = {isa = PBXBuildFile; fileRef = 589B3D161A296CAB003A5367 /* actorTomovie.json */; };
+		58AAC20B1A030610001815C9 /* Level_0.json in Resources */ = {isa = PBXBuildFile; fileRef = 58AAC2061A030610001815C9 /* Level_0.json */; };
+		58AAC20C1A030610001815C9 /* Level_1.json in Resources */ = {isa = PBXBuildFile; fileRef = 58AAC2071A030610001815C9 /* Level_1.json */; };
+		58AAC20D1A030610001815C9 /* Level_2.json in Resources */ = {isa = PBXBuildFile; fileRef = 58AAC2081A030610001815C9 /* Level_2.json */; };
+		58AAC20E1A030610001815C9 /* Level_3.json in Resources */ = {isa = PBXBuildFile; fileRef = 58AAC2091A030610001815C9 /* Level_3.json */; };
+		58AAC20F1A030610001815C9 /* Level_4.json in Resources */ = {isa = PBXBuildFile; fileRef = 58AAC20A1A030610001815C9 /* Level_4.json */; };
+		58F51C231A496D020074D01F /* Showtime.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5835696E1A493C11002D4F84 /* Showtime.ttf */; };
+		58F51C241A496D0C0074D01F /* HOLYWOOD.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 5835696F1A493C11002D4F84 /* HOLYWOOD.TTF */; };
+		C7B21D938A5927086BC94F2A /* libPods-CelebrityCrunchTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 80A6F0F66CA559EF83A8F292 /* libPods-CelebrityCrunchTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +44,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		31275321661D580C467DBFE1 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		3FDA5B18A4004FF39B950BB7 /* Pods-CelebrityCrunchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CelebrityCrunchTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CelebrityCrunchTests/Pods-CelebrityCrunchTests.release.xcconfig"; sourceTree = "<group>"; };
+		4989740A8CB7A520B93CF52B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		5835696B1A4913BE002D4F84 /* actors2.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = actors2.atlas; sourceTree = "<group>"; };
+		5835696E1A493C11002D4F84 /* Showtime.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Showtime.ttf; sourceTree = "<group>"; };
+		5835696F1A493C11002D4F84 /* HOLYWOOD.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = HOLYWOOD.TTF; sourceTree = "<group>"; };
+		58391FD71A05C18200AAAF52 /* RWTLevel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWTLevel.h; sourceTree = "<group>"; };
+		58391FD81A05C18200AAAF52 /* RWTLevel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWTLevel.m; sourceTree = "<group>"; };
 		5847CA4F1A02EB45003CDE56 /* CelebrityCrunch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CelebrityCrunch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5847CA531A02EB45003CDE56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5847CA541A02EB45003CDE56 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -36,15 +59,30 @@
 		5847CA571A02EB45003CDE56 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		5847CA591A02EB45003CDE56 /* GameScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
 		5847CA5A1A02EB45003CDE56 /* GameScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameScene.m; sourceTree = "<group>"; };
-		5847CA5C1A02EB45003CDE56 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		5847CA5E1A02EB45003CDE56 /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
 		5847CA5F1A02EB45003CDE56 /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
 		5847CA621A02EB45003CDE56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		5847CA641A02EB45003CDE56 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5847CA671A02EB45003CDE56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		5847CA6D1A02EB45003CDE56 /* CelebrityCrunchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CelebrityCrunchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5847CA721A02EB45003CDE56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5847CA731A02EB46003CDE56 /* CelebrityCrunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CelebrityCrunchTests.m; sourceTree = "<group>"; };
+		5847CA7D1A02EBA9003CDE56 /* RWTActor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWTActor.h; sourceTree = "<group>"; };
+		5847CA7E1A02EBA9003CDE56 /* RWTActor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWTActor.m; sourceTree = "<group>"; };
+		5847CA7F1A02EBA9003CDE56 /* RWTMovie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWTMovie.h; sourceTree = "<group>"; };
+		5847CA801A02EBA9003CDE56 /* RWTMovie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWTMovie.m; sourceTree = "<group>"; };
+		5847CA8F1A02EFD5003CDE56 /* RWTTile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWTTile.h; sourceTree = "<group>"; };
+		5847CA901A02EFD5003CDE56 /* RWTTile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWTTile.m; sourceTree = "<group>"; };
+		584925B71A29840100DC178A /* movieToActor.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = movieToActor.json; sourceTree = "<group>"; };
+		585786B31A64A5E400AFBC19 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		589B3D161A296CAB003A5367 /* actorTomovie.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = actorTomovie.json; sourceTree = "<group>"; };
+		58AAC2061A030610001815C9 /* Level_0.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Level_0.json; sourceTree = "<group>"; };
+		58AAC2071A030610001815C9 /* Level_1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Level_1.json; sourceTree = "<group>"; };
+		58AAC2081A030610001815C9 /* Level_2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Level_2.json; sourceTree = "<group>"; };
+		58AAC2091A030610001815C9 /* Level_3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Level_3.json; sourceTree = "<group>"; };
+		58AAC20A1A030610001815C9 /* Level_4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Level_4.json; sourceTree = "<group>"; };
+		6EA2ED46D8FC6C8DC2350067 /* Pods-CelebrityCrunchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CelebrityCrunchTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CelebrityCrunchTests/Pods-CelebrityCrunchTests.debug.xcconfig"; sourceTree = "<group>"; };
+		80A6F0F66CA559EF83A8F292 /* libPods-CelebrityCrunchTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CelebrityCrunchTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C98DF52F36A1FACA6FD1E230 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08E057CB2E4418FE70453F44 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,18 +98,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7B21D938A5927086BC94F2A /* libPods-CelebrityCrunchTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		13611EB7924ABC8B7FA03D46 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C98DF52F36A1FACA6FD1E230 /* libPods.a */,
+				80A6F0F66CA559EF83A8F292 /* libPods-CelebrityCrunchTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5835696D1A493BFF002D4F84 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				5835696E1A493C11002D4F84 /* Showtime.ttf */,
+				5835696F1A493C11002D4F84 /* HOLYWOOD.TTF */,
+			);
+			name = Fonts;
+			path = CelebrityCrunch;
+			sourceTree = "<group>";
+		};
 		5847CA461A02EB45003CDE56 = {
 			isa = PBXGroup;
 			children = (
+				5835696D1A493BFF002D4F84 /* Fonts */,
 				5847CA511A02EB45003CDE56 /* CelebrityCrunch */,
 				5847CA701A02EB45003CDE56 /* CelebrityCrunchTests */,
 				5847CA501A02EB45003CDE56 /* Products */,
+				99E731B96E5111E1E2326D1B /* Pods */,
+				13611EB7924ABC8B7FA03D46 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,16 +148,14 @@
 		5847CA511A02EB45003CDE56 /* CelebrityCrunch */ = {
 			isa = PBXGroup;
 			children = (
-				5847CA561A02EB45003CDE56 /* AppDelegate.h */,
-				5847CA571A02EB45003CDE56 /* AppDelegate.m */,
-				5847CA591A02EB45003CDE56 /* GameScene.h */,
-				5847CA5A1A02EB45003CDE56 /* GameScene.m */,
-				5847CA5C1A02EB45003CDE56 /* GameScene.sks */,
-				5847CA5E1A02EB45003CDE56 /* GameViewController.h */,
-				5847CA5F1A02EB45003CDE56 /* GameViewController.m */,
+				585786B31A64A5E400AFBC19 /* Images.xcassets */,
+				5835696B1A4913BE002D4F84 /* actors2.atlas */,
+				5847CA8E1A02EEC5003CDE56 /* Controllers */,
+				5847CA881A02ECB5003CDE56 /* Views */,
+				5847CA861A02EBB1003CDE56 /* Models */,
 				5847CA611A02EB45003CDE56 /* Main.storyboard */,
-				5847CA641A02EB45003CDE56 /* Images.xcassets */,
 				5847CA661A02EB45003CDE56 /* LaunchScreen.xib */,
+				5847CA931A02F005003CDE56 /* Levels */,
 				5847CA521A02EB45003CDE56 /* Supporting Files */,
 			);
 			path = CelebrityCrunch;
@@ -105,6 +165,8 @@
 			isa = PBXGroup;
 			children = (
 				5847CA531A02EB45003CDE56 /* Info.plist */,
+				5847CA561A02EB45003CDE56 /* AppDelegate.h */,
+				5847CA571A02EB45003CDE56 /* AppDelegate.m */,
 				5847CA541A02EB45003CDE56 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -127,6 +189,64 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		5847CA861A02EBB1003CDE56 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				58391FD71A05C18200AAAF52 /* RWTLevel.h */,
+				58391FD81A05C18200AAAF52 /* RWTLevel.m */,
+				5847CA8F1A02EFD5003CDE56 /* RWTTile.h */,
+				5847CA901A02EFD5003CDE56 /* RWTTile.m */,
+				5847CA7D1A02EBA9003CDE56 /* RWTActor.h */,
+				5847CA7E1A02EBA9003CDE56 /* RWTActor.m */,
+				5847CA7F1A02EBA9003CDE56 /* RWTMovie.h */,
+				5847CA801A02EBA9003CDE56 /* RWTMovie.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		5847CA881A02ECB5003CDE56 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5847CA591A02EB45003CDE56 /* GameScene.h */,
+				5847CA5A1A02EB45003CDE56 /* GameScene.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		5847CA8E1A02EEC5003CDE56 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5847CA5E1A02EB45003CDE56 /* GameViewController.h */,
+				5847CA5F1A02EB45003CDE56 /* GameViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		5847CA931A02F005003CDE56 /* Levels */ = {
+			isa = PBXGroup;
+			children = (
+				589B3D161A296CAB003A5367 /* actorTomovie.json */,
+				584925B71A29840100DC178A /* movieToActor.json */,
+				58AAC2061A030610001815C9 /* Level_0.json */,
+				58AAC2071A030610001815C9 /* Level_1.json */,
+				58AAC2081A030610001815C9 /* Level_2.json */,
+				58AAC2091A030610001815C9 /* Level_3.json */,
+				58AAC20A1A030610001815C9 /* Level_4.json */,
+			);
+			name = Levels;
+			sourceTree = "<group>";
+		};
+		99E731B96E5111E1E2326D1B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				31275321661D580C467DBFE1 /* Pods.debug.xcconfig */,
+				4989740A8CB7A520B93CF52B /* Pods.release.xcconfig */,
+				6EA2ED46D8FC6C8DC2350067 /* Pods-CelebrityCrunchTests.debug.xcconfig */,
+				3FDA5B18A4004FF39B950BB7 /* Pods-CelebrityCrunchTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +254,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5847CA771A02EB46003CDE56 /* Build configuration list for PBXNativeTarget "CelebrityCrunch" */;
 			buildPhases = (
+				070F5DDB3BF26B5B38DC68FA /* Check Pods Manifest.lock */,
 				5847CA4B1A02EB45003CDE56 /* Sources */,
 				5847CA4C1A02EB45003CDE56 /* Frameworks */,
 				5847CA4D1A02EB45003CDE56 /* Resources */,
+				301F78136A8BB2DDD625556B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -151,9 +273,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5847CA7A1A02EB46003CDE56 /* Build configuration list for PBXNativeTarget "CelebrityCrunchTests" */;
 			buildPhases = (
+				6B7FC2334D95A1E0479AFF58 /* Check Pods Manifest.lock */,
 				5847CA691A02EB45003CDE56 /* Sources */,
 				5847CA6A1A02EB45003CDE56 /* Frameworks */,
 				5847CA6B1A02EB45003CDE56 /* Resources */,
+				9194BE5848188A6012B07B1D /* Embed Pods Frameworks */,
+				02EFB0CF6E6C421263BD58C3 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -171,7 +296,7 @@
 		5847CA471A02EB45003CDE56 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = DJIBRILKEITA;
 				TargetAttributes = {
 					5847CA4E1A02EB45003CDE56 = {
@@ -207,10 +332,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58AAC20D1A030610001815C9 /* Level_2.json in Resources */,
+				58AAC20F1A030610001815C9 /* Level_4.json in Resources */,
 				5847CA681A02EB45003CDE56 /* LaunchScreen.xib in Resources */,
-				5847CA651A02EB45003CDE56 /* Images.xcassets in Resources */,
-				5847CA5D1A02EB45003CDE56 /* GameScene.sks in Resources */,
+				585786B41A64A5E400AFBC19 /* Images.xcassets in Resources */,
+				58AAC20C1A030610001815C9 /* Level_1.json in Resources */,
+				58AAC20E1A030610001815C9 /* Level_3.json in Resources */,
+				58F51C241A496D0C0074D01F /* HOLYWOOD.TTF in Resources */,
 				5847CA631A02EB45003CDE56 /* Main.storyboard in Resources */,
+				5835696C1A4913BE002D4F84 /* actors2.atlas in Resources */,
+				58F51C231A496D020074D01F /* Showtime.ttf in Resources */,
+				58AAC20B1A030610001815C9 /* Level_0.json in Resources */,
+				584925B81A29840100DC178A /* movieToActor.json in Resources */,
+				589B3D171A296CAB003A5367 /* actorTomovie.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,15 +357,97 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		02EFB0CF6E6C421263BD58C3 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CelebrityCrunchTests/Pods-CelebrityCrunchTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		070F5DDB3BF26B5B38DC68FA /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		301F78136A8BB2DDD625556B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6B7FC2334D95A1E0479AFF58 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9194BE5848188A6012B07B1D /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CelebrityCrunchTests/Pods-CelebrityCrunchTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5847CA4B1A02EB45003CDE56 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58391FD91A05C18200AAAF52 /* RWTLevel.m in Sources */,
+				5847CA841A02EBA9003CDE56 /* RWTMovie.m in Sources */,
 				5847CA601A02EB45003CDE56 /* GameViewController.m in Sources */,
 				5847CA581A02EB45003CDE56 /* AppDelegate.m in Sources */,
 				5847CA5B1A02EB45003CDE56 /* GameScene.m in Sources */,
+				5847CA831A02EBA9003CDE56 /* RWTActor.m in Sources */,
 				5847CA551A02EB45003CDE56 /* main.m in Sources */,
+				5847CA911A02EFD5003CDE56 /* RWTTile.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +509,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -351,26 +568,31 @@
 		};
 		5847CA781A02EB46003CDE56 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31275321661D580C467DBFE1 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CelebrityCrunch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "djibrilkeita.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
 		5847CA791A02EB46003CDE56 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4989740A8CB7A520B93CF52B /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CelebrityCrunch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "djibrilkeita.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
 		5847CA7B1A02EB46003CDE56 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EA2ED46D8FC6C8DC2350067 /* Pods-CelebrityCrunchTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -383,6 +605,7 @@
 				);
 				INFOPLIST_FILE = CelebrityCrunchTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "djibrilkeita.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CelebrityCrunch.app/CelebrityCrunch";
 			};
@@ -390,6 +613,7 @@
 		};
 		5847CA7C1A02EB46003CDE56 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FDA5B18A4004FF39B950BB7 /* Pods-CelebrityCrunchTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -398,6 +622,7 @@
 				);
 				INFOPLIST_FILE = CelebrityCrunchTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "djibrilkeita.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CelebrityCrunch.app/CelebrityCrunch";
 			};
@@ -422,6 +647,7 @@
 				5847CA791A02EB46003CDE56 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5847CA7A1A02EB46003CDE56 /* Build configuration list for PBXNativeTarget "CelebrityCrunchTests" */ = {
 			isa = XCConfigurationList;
@@ -430,6 +656,7 @@
 				5847CA7C1A02EB46003CDE56 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
