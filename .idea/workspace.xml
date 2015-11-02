@@ -2,463 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="227e488d-106b-4ef6-b733-935280919515" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Adam-Sandler-blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Adam-Sandler-blue@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Adam-Sandler-hilighted.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Adam-Sandler-hilighted@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Adam-Sandler.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Adam-Sandler@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Al-Pacino-blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Al-Pacino-blue@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Al-Pacino-hilighted.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Al-Pacino-hilighted@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Al-Pacino.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Al-Pacino@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Angelina-Jolie-blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Angelina-Jolie-blue@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Angelina-Jolie-hilighted.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Angelina-Jolie-hilighted@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Angelina-Jolie.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Angelina-Jolie@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Anne-Hathaway-blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Anne-Hathaway-blue@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Anne-Hathaway-hilighted.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Anne-Hathaway-hilighted@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Anne-Hathaway.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Anne-Hathaway@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Anthony-Hopkins-blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Anthony-Hopkins-blue@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Anthony-Hopkins-hilighted.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Anthony-Hopkins-hilighted@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Anthony-Hopkins.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Anthony-Hopkins@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/Images.xcassets/Background-1.imageset/Background-1@3x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/Images.xcassets/Background.imageset/Background@3x.png.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Ben-Stiller-blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Ben-Stiller-blue@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Ben-Stiller-hilighted.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Ben-Stiller-hilighted@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Ben-Stiller.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Ben-Stiller@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Brad-Pitt-blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Brad-Pitt-blue@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Brad-Pitt-hilighted.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Brad-Pitt-hilighted@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Brad-Pitt.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Brad-Pitt@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Bruce-Willis-blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Bruce-Willis-blue@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Bruce-Willis-hilighted.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Bruce-Willis-hilighted@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Bruce-Willis.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Bruce-Willis@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/Images.xcassets/Button.imageset/Button@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Cameron-Diaz-blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Cameron-Diaz-blue@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Cameron-Diaz-hilighted.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Cameron-Diaz-hilighted@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Cameron-Diaz.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Cameron-Diaz@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Cate-Blanchett-blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Cate-Blanchett-blue@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Cate-Blanchett-hilighted.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Cate-Blanchett-hilighted@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Cate-Blanchett.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Cate-Blanchett@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Catherine-Zeta-Jones-blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Catherine-Zeta-Jones-blue@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Catherine-Zeta-Jones-hilighted.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Catherine-Zeta-Jones-hilighted@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Catherine-Zeta-Jones.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Catherine-Zeta-Jones@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Charlize-Theron-blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Charlize-Theron-blue@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Charlize-Theron-hilighted.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Charlize-Theron-hilighted@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Charlize-Theron.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Charlize-Theron@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Christian-Bale-blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Christian-Bale-blue@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Christian-Bale-hilighted.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Christian-Bale-hilighted@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Christian-Bale.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Christian-Bale@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Clint-Eastwood-blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Clint-Eastwood-blue@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Clint-Eastwood-hilighted.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Clint-Eastwood-hilighted@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Clint-Eastwood.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Clint-Eastwood@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Clive-Owen-blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Clive-Owen-blue@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Clive-Owen-hilighted.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Clive-Owen-hilighted@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Clive-Owen.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Clive-Owen@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Daniel-Craig-blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Daniel-Craig-blue@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Daniel-Craig-hilighted.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Daniel-Craig-hilighted@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Daniel-Craig.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Daniel-Craig@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Daniel-Day-Lewis-blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Daniel-Day-Lewis-blue@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Daniel-Day-Lewis-hilighted.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Daniel-Day-Lewis-hilighted@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Daniel-Day-Lewis.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Daniel-Day-Lewis@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Denzel-Washington-blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Denzel-Washington-blue@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Denzel-Washington-hilighted.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Denzel-Washington-hilighted@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Denzel-Washington.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Denzel-Washington@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Drew-Barrymore-blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Drew-Barrymore-blue@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Drew-Barrymore-hilighted.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Drew-Barrymore-hilighted@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Drew-Barrymore.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Drew-Barrymore@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Dustin-Hoffman-blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Dustin-Hoffman-blue@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Dustin-Hoffman-hilighted.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Dustin-Hoffman-hilighted@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Dustin-Hoffman.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Dustin-Hoffman@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Eddie-Murphy-blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Eddie-Murphy-blue@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Eddie-Murphy-hilighted.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Eddie-Murphy-hilighted@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Eddie-Murphy.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Eddie-Murphy@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Edward-Norton-blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Edward-Norton-blue@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Edward-Norton-hilighted.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Edward-Norton-hilighted@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Edward-Norton.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Edward-Norton@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/George-Clooney-blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/George-Clooney-blue@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/George-Clooney-hilighted.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/George-Clooney-hilighted@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/George-Clooney.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/George-Clooney@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Gwyneth-Paltrow-blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Gwyneth-Paltrow-hilighted.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Gwyneth-Paltrow-hilighted@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Gwyneth-Paltrow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Gwyneth-Paltrow@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/HOLYWOOD.TTF" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Halle-Berry-blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Halle-Berry-blue@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Halle-Berry-hilighted.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Halle-Berry-hilighted@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Halle-Berry.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Halle-Berry@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Harrison-Ford-blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Harrison-Ford-blue@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Harrison-Ford-hilighted.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Harrison-Ford-hilighted@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Harrison-Ford.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Harrison-Ford@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Hilary-Swank-blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Hilary-Swank-blue@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Hilary-Swank-hilighted.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Hilary-Swank-hilighted@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Hilary-Swank.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Hilary-Swank@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Hugh-Grant-blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Hugh-Grant-blue@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Hugh-Grant-hilighted.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Hugh-Grant-hilighted@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Hugh-Grant.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Hugh-Grant@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Hugh-Jackman-blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Hugh-Jackman-blue@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Hugh-Jackman-hilighted.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Hugh-Jackman-hilighted@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Hugh-Jackman.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Hugh-Jackman@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Jack-Black-blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Jack-Black-blue@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Jack-Black-hilighted.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Jack-Black-hilighted@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Jack-Black.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Jack-Black@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Jack-Nicholson-blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Jack-Nicholson-blue@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Jack-Nicholson-hilighted.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Jack-Nicholson-hilighted@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Jack-Nicholson.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Jack-Nicholson@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Jackie-Chan-blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Jackie-Chan-blue@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Jackie-Chan-hilighted.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Jackie-Chan-hilighted@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Jackie-Chan.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Jackie-Chan@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Jake-Gyllenhaal-blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Jake-Gyllenhaal-blue@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Jake-Gyllenhaal-hilighted.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Jake-Gyllenhaal-hilighted@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Jake-Gyllenhaal.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Jake-Gyllenhaal@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Jennifer-Aniston-blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Jennifer-Aniston-blue@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Jennifer-Aniston-hilighted.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Jennifer-Aniston-hilighted@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Jennifer-Aniston.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Jennifer-Aniston@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Jim-Carrey-blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Jim-Carrey-blue@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Jim-Carrey-hilighted.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Jim-Carrey-hilighted@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Jim-Carrey.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Jim-Carrey@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Jodie-Foster-blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Jodie-Foster-blue@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Jodie-Foster-hilighted.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Jodie-Foster-hilighted@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Jodie-Foster.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Jodie-Foster@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Johnny-Depp-blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Johnny-Depp-blue@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Johnny-Depp-hilighted.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Johnny-Depp-hilighted@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Johnny-Depp.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Johnny-Depp@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Julia-Roberts-blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Julia-Roberts-blue@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Julia-Roberts-hilighted.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Julia-Roberts-hilighted@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Julia-Roberts.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Julia-Roberts@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Kate-Hudson-blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Kate-Hudson-blue@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Kate-Hudson-hilighted.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Kate-Hudson-hilighted@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Kate-Hudson.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Kate-Hudson@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Kate-Winslet-blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Kate-Winslet-blue@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Kate-Winslet-hilighted.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Kate-Winslet-hilighted@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Kate-Winslet.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Kate-Winslet@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Keanu-Reeves-blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Keanu-Reeves-blue@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Keanu-Reeves-hilighted.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Keanu-Reeves-hilighted@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Keanu-Reeves.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Keanu-Reeves@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Keira-Knightley-blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Keira-Knightley-blue@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Keira-Knightley-hilighted.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Keira-Knightley-hilighted@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Keira-Knightley.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Keira-Knightley@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Leonardo-DiCaprio-blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Leonardo-DiCaprio-blue@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Leonardo-DiCaprio-hilighted.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Leonardo-DiCaprio-hilighted@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Leonardo-DiCaprio.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Leonardo-DiCaprio@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Mark-Wahlberg-blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Mark-Wahlberg-blue@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Mark-Wahlberg-hilighted.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Mark-Wahlberg-hilighted@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Mark-Wahlberg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Mark-Wahlberg@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Matt-Damon-blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Matt-Damon-blue@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Matt-Damon-hilighted.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Matt-Damon-hilighted@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Matt-Damon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Matt-Damon@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Matthew-McConaughey-blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Matthew-McConaughey-blue@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Matthew-McConaughey-hilighted.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Matthew-McConaughey-hilighted@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Matthew-McConaughey.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Matthew-McConaughey@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Mel-Gibson-blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Mel-Gibson-blue@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Mel-Gibson-hilighted.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Mel-Gibson-hilighted@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Mel-Gibson.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Mel-Gibson@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Meryl-Streep-blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Meryl-Streep-blue@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Meryl-Streep-hilighted.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Meryl-Streep-hilighted@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Meryl-Streep.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Meryl-Streep@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Michael-Douglas-blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Michael-Douglas-blue@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Michael-Douglas-hilighted.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Michael-Douglas-hilighted@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Michael-Douglas.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Michael-Douglas@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Natalie-Portman-blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Natalie-Portman-blue@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Natalie-Portman-hilighted.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Natalie-Portman-hilighted@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Natalie-Portman.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Natalie-Portman@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Nicolas-Cage-blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Nicolas-Cage-blue@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Nicolas-Cage-hilighted.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Nicolas-Cage-hilighted@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Nicolas-Cage.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Nicolas-Cage@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Nicole-Kidman-blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Nicole-Kidman-blue@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Nicole-Kidman-hilighted.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Nicole-Kidman-hilighted@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Nicole-Kidman.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Nicole-Kidman@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Penelope-Cruz-blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Penelope-Cruz-blue@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Penelope-Cruz-hilighted.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Penelope-Cruz-hilighted@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Penelope-Cruz.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Penelope-Cruz@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Reese-Witherspoon-blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Reese-Witherspoon-blue@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Reese-Witherspoon-hilighted.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Reese-Witherspoon-hilighted@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Reese-Witherspoon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Reese-Witherspoon@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Renee-Zellweger-blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Renee-Zellweger-blue@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Renee-Zellweger-hilighted.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Renee-Zellweger-hilighted@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Renee-Zellweger.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Renee-Zellweger@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Richard-Gere-blue@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Richard-Gere-hilighted.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Richard-Gere-hilighted@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Richard-Gere.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Richard-Gere@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Robert-De-Niro-blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Robert-De-Niro-blue@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Robert-De-Niro-hilighted.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Robert-De-Niro-hilighted@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Robert-De-Niro.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Robert-De-Niro@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Robert-Downey-blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Robert-Downey-blue@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Robert-Downey-hilighted.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Robert-Downey-hilighted@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Robert-Downey.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Robert-Downey@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Robert-Redford-blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Robert-Redford-blue@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Robert-Redford-hilighted.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Robert-Redford-hilighted@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Robert-Redford.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Robert-Redford@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Robin-Williams-blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Robin-Williams-blue@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Robin-Williams-hilighted.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Robin-Williams-hilighted@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Robin-Williams.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Robin-Williams@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Russell-Crowe-blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Russell-Crowe-blue@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Russell-Crowe-hilighted.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Russell-Crowe-hilighted@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Russell-Crowe.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Russell-Crowe@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Sacha-Baron-Cohen-blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Sacha-Baron-Cohen-blue@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Sacha-Baron-Cohen-hilighted.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Sacha-Baron-Cohen-hilighted@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Sacha-Baron-Cohen.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Sacha-Baron-Cohen@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Sandra-Bullock-blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Sandra-Bullock-blue@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Sandra-Bullock-hilighted.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Sandra-Bullock-hilighted@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Sandra-Bullock.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Sandra-Bullock@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Scarlett-Johansson-blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Scarlett-Johansson-blue@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Scarlett-Johansson-hilighted.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Scarlett-Johansson-hilighted@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Scarlett-Johansson.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Scarlett-Johansson@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Sean-Penn-blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Sean-Penn-blue@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Sean-Penn-hilighted.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Sean-Penn-hilighted@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Sean-Penn.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Sean-Penn@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/Showtime.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Steve-Carell-blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Steve-Carell-blue@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Steve-Carell-hilighted.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Steve-Carell-hilighted@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Steve-Carell.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Steve-Carell@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Tile.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Tile@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Tom-Cruise-blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Tom-Cruise-blue@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Tom-Cruise-hilighted.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Tom-Cruise-hilighted@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Tom-Cruise.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Tom-Cruise@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Tom-Hanks-blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Tom-Hanks-blue@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Tom-Hanks-hilighted.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Tom-Hanks-hilighted@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Tom-Hanks.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Tom-Hanks@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Will-Ferrell-blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Will-Ferrell-blue@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Will-Ferrell-hilighted.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Will-Ferrell-hilighted@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Will-Ferrell.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Will-Ferrell@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Will-Smith-blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Will-Smith-blue@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Will-Smith-hilighted.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Will-Smith-hilighted@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Will-Smith.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actors2.atlas/Will-Smith@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/Images.xcassets/moviePanel.imageset/moviePanel.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/Images.xcassets/Background-1.imageset/Contents.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/Images.xcassets/Background.imageset/Contents.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/Images.xcassets/Button.imageset/Contents.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/Level_0.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/Level_1.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/Level_2.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/Level_3.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/Level_4.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/RWTActor.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/RWTActor.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/RWTLevel.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/RWTLevel.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/RWTMovie.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/RWTMovie.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/RWTTile.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/RWTTile.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/actorTomovie.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CelebrityCrunch/movieToActor.json" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CelebrityCrunch/GameScene.sks" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CelebrityCrunch/Images.xcassets/Spaceship.imageset/Spaceship.png" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/CelebrityCrunch/Images.xcassets/Spaceship.imageset/Contents.json" afterPath="$PROJECT_DIR$/CelebrityCrunch/Images.xcassets/moviePanel.imageset/Contents.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CelebrityCrunchTests/CelebrityCrunchTests.m" afterPath="$PROJECT_DIR$/CelebrityCrunchTests/CelebrityCrunchTests.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CelebrityCrunch/GameScene.h" afterPath="$PROJECT_DIR$/CelebrityCrunch/GameScene.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/CelebrityCrunch.iml" afterPath="$PROJECT_DIR$/.idea/CelebrityCrunch.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CelebrityCrunch/GameScene.m" afterPath="$PROJECT_DIR$/CelebrityCrunch/GameScene.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CelebrityCrunch/GameViewController.h" afterPath="$PROJECT_DIR$/CelebrityCrunch/GameViewController.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CelebrityCrunch/GameViewController.m" afterPath="$PROJECT_DIR$/CelebrityCrunch/GameViewController.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CelebrityCrunch/Info.plist" afterPath="$PROJECT_DIR$/CelebrityCrunch/Info.plist" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CelebrityCrunchTests/Info.plist" afterPath="$PROJECT_DIR$/CelebrityCrunchTests/Info.plist" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CelebrityCrunch/Base.lproj/LaunchScreen.xib" afterPath="$PROJECT_DIR$/CelebrityCrunch/Base.lproj/LaunchScreen.xib" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CelebrityCrunch/Base.lproj/Main.storyboard" afterPath="$PROJECT_DIR$/CelebrityCrunch/Base.lproj/Main.storyboard" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CelebrityCrunch.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/CelebrityCrunch.xcodeproj/project.pbxproj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="CelebrityCrunch.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -482,8 +29,8 @@
       <file leaf-file-name="GameViewController.m" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CelebrityCrunch/GameViewController.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="6.111111">
-              <caret line="34" column="21" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="21" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="77" column="20" selection-start-line="77" selection-start-column="20" selection-end-line="77" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -522,9 +69,12 @@
       <file leaf-file-name="GameScene.m" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CelebrityCrunch/GameScene.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.820296">
-              <caret line="89" column="0" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
-              <folding />
+            <state vertical-scroll-proportion="0.17862166">
+              <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+              <folding>
+                <element signature="e#146#167#0" expanded="true" />
+                <element signature="e#1603#2814#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -540,6 +90,7 @@
         <option value="$PROJECT_DIR$/CelebrityCrunch/GameViewController.m" />
         <option value="$PROJECT_DIR$/Podfile" />
         <option value="$PROJECT_DIR$/CelebrityCrunchTests/CelebrityCrunchTests.m" />
+        <option value="$PROJECT_DIR$/CelebrityCrunch/GameScene.m" />
       </list>
     </option>
   </component>
@@ -551,10 +102,9 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="70" />
     <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="825" />
+    <option name="height" value="829" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -690,6 +240,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <pass-parent-envs>true</pass-parent-envs>
+      <envs />
       <method />
     </configuration>
     <configuration default="false" name="CelebrityCrunch" type="AppleRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" PROJECT_NAME="CelebrityCrunch" TARGET_NAME="CelebrityCrunch" CONFIG_NAME="Debug" SCHEME_NAME="CelebrityCrunch" RUN_TARGET_PROJECT_NAME="CelebrityCrunch" RUN_TARGET_NAME="CelebrityCrunch" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
@@ -771,28 +327,28 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="70" y="23" width="1440" height="825" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="829" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13642564" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31650752" sideWeight="0.5024665" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287858" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287858" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="1.0" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287858" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25369978" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31650752" sideWeight="0.49753347" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24947146" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25369978" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31650752" sideWeight="0.5024665" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287858" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287858" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31650752" sideWeight="0.49753347" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -800,16 +356,58 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/CelebrityCrunch/GameViewController.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="77" column="20" selection-start-line="77" selection-start-column="20" selection-end-line="77" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CelebrityCrunch/GameViewController.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CelebrityCrunchTests/CelebrityCrunchTests.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CelebrityCrunch/RWTLevel.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="227" column="1" selection-start-line="227" selection-start-column="1" selection-end-line="227" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CelebrityCrunch/GameScene.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#146#167#0" expanded="true" />
+            <element signature="e#1603#2814#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Podfile">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -829,14 +427,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CelebrityCrunch/GameViewController.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="6.111111">
-          <caret line="34" column="21" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CelebrityCrunch/RWTLevel.m">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -845,11 +435,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/CelebrityCrunch/GameViewController.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="77" column="20" selection-start-line="77" selection-start-column="20" selection-end-line="77" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/CelebrityCrunch/GameScene.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.820296">
-          <caret line="89" column="0" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="0.17862166">
+          <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+          <folding>
+            <element signature="e#146#167#0" expanded="true" />
+            <element signature="e#1603#2814#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
