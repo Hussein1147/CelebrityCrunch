@@ -257,7 +257,6 @@ static const int UNMATCHE_PENALTY =1;
             }
         }
     
-    
     return set;
 }
 // Edit this method below, it is probably braking.
@@ -289,13 +288,15 @@ static const int UNMATCHE_PENALTY =1;
         
     NSUInteger radomIndex = arc4random_uniform((uint32_t)[movieActors count]);
     NSUInteger Rawindex = [movieActor actorIndex:[[movieActors firstObject] objectAtIndex:radomIndex]];
-    index = Rawindex+1;
+    index = Rawindex + 1;
 
     NSSet *tileSet =  [self getTiles];
     arrayWithTile = [self randomObject:tileSet];
         colum = [arrayWithTile[0] integerValue];
         row= [arrayWithTile[1] integerValue];
         actor = [self createActorsAtColumn:colum row:row withIndex:index];
+        
+        NSLog(@"Index:%ld", index);
         
     }
     return actor;
