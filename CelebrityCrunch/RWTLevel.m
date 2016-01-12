@@ -232,7 +232,6 @@ static const int UNMATCHE_PENALTY =1;
 -(NSSet *)createInitialActors{
     NSMutableSet *set = [NSMutableSet set];
     NSMutableSet *newset = [NSMutableSet set];
-    NSMutableSet *dict = [[NSMutableSet alloc]init];
    RWTActor *movieActor=  [self createCurrentMovieActors];
     
     

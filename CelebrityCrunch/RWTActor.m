@@ -24,7 +24,7 @@
         
         @"Drew-Barrymore",
         
-        @"Robert-Downey-Jr.",
+        @"Robert-Downey-Jr",
        
         @"Al-Pacino",
         
@@ -178,7 +178,7 @@
         
         @"Drew-Barrymore-hilighted",
         
-        @"Robert-Downey-Jr.-hilighted",
+        @"Robert-Downey-Jr-hilighted",
         
         @"Al-Pacino-hilighted",
         
@@ -326,7 +326,7 @@
         
         @"Drew-Barrymore",
     
-        @"Robert-Downey-Jr.",
+        @"Robert-Downey-Jr",
         
         @"Al-Pacino",
         
@@ -470,7 +470,7 @@
 -(NSString *)blueHilightedSpriteNames{
 
     static NSString *const bluespriteName []  ={
-     @"Robert-Redford-blue", @"Drew-Barrymore-blue", @"Robert-Downey-Jr.-blue", @"Al-Pacino-blue", @"Dustin-Hoffman-blue", @"Jennifer-Aniston-blue", @"Kate-Hudson-blue", @"Robin-Williams-blue", @"Jodie-Foster-blue", @"Christian-Bale-blue", @"Anne-Hathaway-blue", @"Eddie-Murphy-blue", @"Angelina-Jolie-blue", @"Matthew-McConaughey-blue", @"Michael-Keaton-blue", @"Hugh-Jackman-blue", @"Nicolas-Cage-blue", @"George-Clooney-blue", @"Meryl-Streep-blue", @"Cate-Blanchett-blue", @"Tom-Cruise-blue", @"Will-Smith-blue", @"Jack-Black-blue", @"Adam-Sandler-blue", @"Jackie-Chan-blue", @"Clive-Owen-blue", @"Hugh-Grant-blue", @"Jack-Nicholson-blue", @"Nicole-Kidman-blue", @"Robert-De-Niro-blue", @"Steve-Carell-blue", @"Jake-Gyllenhaal-blue", @"Ben-Stiller-blue", @"Keira-Knightley-blue", @"Daniel-Craig-blue", @"Gwyneth-Paltrow-blue", @"Russell-Crowe-blue", @"Sean-Penn-blue", @"Anthony-Hopkins-blue", @"Clint-Eastwood-blue", @"Edward-Norton-blue", @"Keanu-Reeves-blue", @"Richard-Gere-blue", @"Mel-Gibson-blue", @"Sacha-Baron-Cohen-blue", @"Charlize-Theron-blue", @"Halle-Berry-blue", @"Bruce-Willis-blue", @"Penelope-Cruz-blue", @"Sandra-Bullock-blue", @"Daniel-Day-Lewis-blue", @"Brad-Pitt-blue", @"Will-Ferrell-blue", @"Natalie-Portman-blue", @"Johnny-Depp-blue", @"Cameron-Diaz-blue", @"Matt-Damon-blue", @"Kate-Winslet-blue", @"Renee-Zellweger-blue", @"Scarlett-Johansson-blue", @"Catherine-Zeta-Jones-blue", @"Denzel-Washington-blue", @"Harrison-Ford-blue", @"Julia-Roberts-blue", @"Reese-Witherspoon-blue", @"Tom-Hanks-blue", @"Jim-Carrey-blue", @"Leonardo-DiCaprio-blue", @"Hilary-Swank-blue", @"Mark-Wahlberg-blue"
+     @"Robert-Redford-blue", @"Drew-Barrymore-blue", @"Robert-Downey-Jr-blue", @"Al-Pacino-blue", @"Dustin-Hoffman-blue", @"Jennifer-Aniston-blue", @"Kate-Hudson-blue", @"Robin-Williams-blue", @"Jodie-Foster-blue", @"Christian-Bale-blue", @"Anne-Hathaway-blue", @"Eddie-Murphy-blue", @"Angelina-Jolie-blue", @"Matthew-McConaughey-blue", @"Michael-Keaton-blue", @"Hugh-Jackman-blue", @"Nicolas-Cage-blue", @"George-Clooney-blue", @"Meryl-Streep-blue", @"Cate-Blanchett-blue", @"Tom-Cruise-blue", @"Will-Smith-blue", @"Jack-Black-blue", @"Adam-Sandler-blue", @"Jackie-Chan-blue", @"Clive-Owen-blue", @"Hugh-Grant-blue", @"Jack-Nicholson-blue", @"Nicole-Kidman-blue", @"Robert-De-Niro-blue", @"Steve-Carell-blue", @"Jake-Gyllenhaal-blue", @"Ben-Stiller-blue", @"Keira-Knightley-blue", @"Daniel-Craig-blue", @"Gwyneth-Paltrow-blue", @"Russell-Crowe-blue", @"Sean-Penn-blue", @"Anthony-Hopkins-blue", @"Clint-Eastwood-blue", @"Edward-Norton-blue", @"Keanu-Reeves-blue", @"Richard-Gere-blue", @"Mel-Gibson-blue", @"Sacha-Baron-Cohen-blue", @"Charlize-Theron-blue", @"Halle-Berry-blue", @"Bruce-Willis-blue", @"Penelope-Cruz-blue", @"Sandra-Bullock-blue", @"Daniel-Day-Lewis-blue", @"Brad-Pitt-blue", @"Will-Ferrell-blue", @"Natalie-Portman-blue", @"Johnny-Depp-blue", @"Cameron-Diaz-blue", @"Matt-Damon-blue", @"Kate-Winslet-blue", @"Renee-Zellweger-blue", @"Scarlett-Johansson-blue", @"Catherine-Zeta-Jones-blue", @"Denzel-Washington-blue", @"Harrison-Ford-blue", @"Julia-Roberts-blue", @"Reese-Witherspoon-blue", @"Tom-Hanks-blue", @"Jim-Carrey-blue", @"Leonardo-DiCaprio-blue", @"Hilary-Swank-blue", @"Mark-Wahlberg-blue"
     
     };
     return bluespriteName[self.actorIndex-1];
