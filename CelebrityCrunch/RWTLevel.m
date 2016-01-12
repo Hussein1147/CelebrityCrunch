@@ -110,7 +110,6 @@
 #pragma mark - matching actors
 static const int MATCH_BONUS =4;
 static const int UNMATCHE_PENALTY =1;
-//static const int COST_TO_CHOSE = 1;
 
 -(void)chooseActorAtColumn:(NSInteger)column row:(NSInteger)row{
 
@@ -203,7 +202,7 @@ static const int UNMATCHE_PENALTY =1;
         }
     }
     //check if set row and columns are consistent.
-    NSLog(@"Tiles: %@", set);
+//    NSLog(@"Tiles: %@", set);
     return set;
 
 }
@@ -233,8 +232,10 @@ static const int UNMATCHE_PENALTY =1;
 -(NSSet *)createInitialActors{
     NSMutableSet *set = [NSMutableSet set];
     NSMutableSet *newset = [NSMutableSet set];
-    
+    NSMutableSet *dict = [[NSMutableSet alloc]init];
    RWTActor *movieActor=  [self createCurrentMovieActors];
+    
+    
     [set addObject:movieActor];
     //This is why it is not working set size is 25 but only 9 actors are displayed so movieactor may not be created.
         do{
@@ -255,8 +256,11 @@ static const int UNMATCHE_PENALTY =1;
                 }
             }
         }
+    
+    
     return set;
 }
+// Edit this method below, it is probably braking.
 
 -(RWTActor *)createCurrentMovieActors{
     NSInteger index;
@@ -265,11 +269,23 @@ static const int UNMATCHE_PENALTY =1;
     NSInteger row;
     RWTActor *actor;
 
-    if([self.movie getActorListforMovie:self.movie.movieName] !=nil){
+    if([self.movie getActorListforMovie:self.movie.movieName] !=nil)
+    
+    {
     NSMutableArray *movieActors =[NSMutableArray arrayWithObject:[self.movie getActorListforMovie:self.movie.movieName]];
+        
         NSLog(@"MovieAcotrs: %@", movieActors);
+        NSMutableSet *movieActorSet= [NSMutableSet setWithArray:movieActors];
+        NSSet *setWithCurrentActor = [self getActors];
+        if (setWithCurrentActor != nil) {
+            [movieActorSet intersectSet:setWithCurrentActor];
+            NSArray *resultingArray = [movieActorSet allObjects];
+            
+            NSLog(@"Resulting array: %@",resultingArray);
+        }
 
     RWTActor *movieActor = [[RWTActor alloc]init];
+    
         
     NSUInteger radomIndex = arc4random_uniform((uint32_t)[movieActors count]);
     NSUInteger Rawindex = [movieActor actorIndex:[[movieActors firstObject] objectAtIndex:radomIndex]];
@@ -281,8 +297,6 @@ static const int UNMATCHE_PENALTY =1;
         row= [arrayWithTile[1] integerValue];
         actor = [self createActorsAtColumn:colum row:row withIndex:index];
         
-    
-    
     }
     return actor;
 

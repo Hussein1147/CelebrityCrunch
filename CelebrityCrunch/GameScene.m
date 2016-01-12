@@ -223,11 +223,9 @@ static const CGFloat TileHeight = 95.0;
         }
     
     
-   // [self runAction:self.matchSound];
-    
     // 4
     [self runAction:[SKAction sequence:@[
-                                         [SKAction waitForDuration:0.3],
+                                         [SKAction waitForDuration:0.4],
                                          [SKAction runBlock:completion]
                                          ]]];
 }

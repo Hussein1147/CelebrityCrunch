@@ -52,7 +52,6 @@
                 [self.scene animateFallingActors:colums completion:^{
                     self.view.userInteractionEnabled =YES;
                 }];
-                
             }
         }];
     }
@@ -64,6 +63,12 @@
 -(void)updateMovieLabel{
     self.movieLabel.text = [self stringCleanser:self.level.movie.movieName];
 }
+-(void)animateMoviePanelWithShuffle{
+    [self animateMoviePanel];
+    [self reShufle];
+    
+
+}
 -(void)animateMoviePanel{
     CSAnimationView *animationView = [[CSAnimationView alloc] initWithFrame:CGRectMake(self.moviePanel.frame.origin.x, self.moviePanel.frame.origin.y, self.moviePanel.frame.size.width, self.moviePanel.frame.size.height)];
     animationView.backgroundColor = [UIColor clearColor];
@@ -72,10 +77,9 @@
     animationView.type    = CSAnimationTypeBounceLeft;
     [self.view addSubview:animationView];
     [animationView addSubview:self.moviePanel];
-    self.tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(animateMoviePanel)];
+    self.tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(animateMoviePanelWithShuffle)];
     self.level.movie.movieName =[self.level nextLevel];
     [self updateMovieLabel];
-    [self reShufle];
     [animationView setUserInteractionEnabled:YES];
     [animationView addGestureRecognizer:self.tapGestureRecognizer];
     [animationView startCanvasAnimation];
@@ -102,12 +106,13 @@
     [self.moviePanel addSubview:self.movieLabel];
     self.movieLabel.text = [self stringCleanser:self.level.movie.movieName];
     [self animateMoviePanel];
-     [self showActorLayer];
+    [self showActorLayer];
     [self shuffle];
 
 
 }
 -(void)reShufle{
+    
     NSSet *actors = [self.level reShuffle];
     self.view.userInteractionEnabled = NO;
     [self.scene animateMatchedActors:actors completion:^{
