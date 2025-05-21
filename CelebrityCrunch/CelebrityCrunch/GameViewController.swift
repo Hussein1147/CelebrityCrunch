@@ -201,24 +201,39 @@ public class GameViewController: UIViewController, GameSceneDelegate, GameViewDe
         let removedActorSet = level.removeMatches() // Removes matched actors from level model, returns them
         
         if !removedActorSet.isEmpty {
-            scene.view?.isUserInteractionEnabled = false
+            scene.view?.isUserInteractionEnabled = false // Disable interaction during animations
+            
             scene.animateMatchedActors(removedActorSet) { [weak self] in
+                guard let self = self else { return }
+                
                 // After matched actors are animated out, fill holes
-                if let fallingActor = self?.level.fillHoles() { // fillHoles now returns one actor
-                    if let actorToAnimate = fallingActor { // Check if non-nil
-                         self?.scene.animateFallingActors(actorToAnimate) {
-                            self?.scene.view?.isUserInteractionEnabled = true
-                            // Potentially check for more matches/chain reactions here if game has them
-                        }
-                    } else { // No actor returned by fillHoles (board might be full or no new actor generated)
-                        self?.scene.view?.isUserInteractionEnabled = true
-                    }
-                } else { // No actor returned by fillHoles
-                    self?.scene.view?.isUserInteractionEnabled = true
+                let newActors = self.level.fillHoles() // fillHoles now returns Set<RWTActor>
+                
+                if newActors.isEmpty {
+                    self.scene.view?.isUserInteractionEnabled = true // Re-enable if no new actors
+                    return
                 }
-                 // Note: Original fillHoles returned only one actor. If multiple were expected to fall,
-                 // RWTLevel.fillHoles() and this part of handleMatches would need adjustment.
+
+                let dispatchGroup = DispatchGroup()
+
+                for actorToAnimate in newActors {
+                    dispatchGroup.enter() // Enter group for each animation
+                    self.scene.animateFallingActors(actorToAnimate) {
+                        // This completion block is for a single actor's fall.
+                        dispatchGroup.leave() // Leave group when this animation is done
+                    }
+                }
+
+                dispatchGroup.notify(queue: .main) {
+                    // This block is executed after all falling animations have completed.
+                    self.scene.view?.isUserInteractionEnabled = true
+                    // Potentially check for more matches/chain reactions here if game has them
+                    // self.handleMatches() // Example: for cascading matches
+                }
             }
+        } else {
+            // If no matches were removed, ensure interaction is enabled (e.g., if it was disabled before this call)
+            scene.view?.isUserInteractionEnabled = true
         }
     }
 

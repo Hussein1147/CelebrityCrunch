@@ -17,8 +17,9 @@ public class RWTLevel: NSObject, GameViewDelegate {
     @objc public static let NumColumns = 5
     @objc public static let NumRows = 5
 
-    @objc public var actorMap: [String: Any]?
-    @objc public var movieMap: [String: Any]? // Or more specific like [String: [String]]
+    // Updated types for actorMap and movieMap
+    @objc public var actorMap: [String: [String]]? 
+    @objc public var movieMap: [String: [String]]?
     
     // Lazy initialization for movie property
     @objc public private(set) lazy var movie: RWTMovie = RWTMovie()
@@ -30,12 +31,12 @@ public class RWTLevel: NSObject, GameViewDelegate {
     public var actors: [[RWTActor?]] = Array(repeating: Array(repeating: nil, count: NumRows), count: NumColumns)
     public var tiles: [[RWTTile?]] = Array(repeating: Array(repeating: nil, count: NumRows), count: NumColumns)
 
-    // Private properties
-    private var currentChosenActor: [RWTActor] = [] // Changed from NSMutableArray
-    private var currentChosenActorNames: [String] = [] // Changed from NSMutableArray
-    private var chosenActorNames: [String] = [] // Changed from NSMutableArray
+    // Private properties - using Swift native types
+    private var currentChosenActors: [RWTActor] = [] 
+    private var currentChosenActorSpriteNames: [String] = [] // Names of actors in the current selection attempt
+    private var historicallyChosenActorSpriteNames: Set<String> = [] // All unique actor names picked in the level
     
-    private var levelMovies: [String] = [] // Assuming movie names are strings
+    private var levelMovieTitles: [String] = [] // Assuming movie names are strings
     private var enumerator: NSEnumerator? // Or a Swift iterator if applicable
     
     private var matchScore: Int = 0 // Kept from Obj-C version
@@ -45,78 +46,90 @@ public class RWTLevel: NSObject, GameViewDelegate {
     private let UNMATCHED_PENALTY = 1
 
     @objc
-    public init(firstFilename actorFile: String, secondFile movieFile: String, thirdFile levelFile: String) {
+    public init(firstFilename actorToMovieFile: String, secondFile movieToActorFile: String, thirdFile levelLayoutFile: String) {
         super.init()
 
-        // Load JSON data
-        if let mapData = loadJSON(filename: actorFile) {
-            self.actorMap = mapData
-        } else {
-            print("Error loading actorFile: \(actorFile)")
-            // Handle error, perhaps by not fully initializing or setting a failure state
+        // Load JSON data with improved type safety
+        self.actorMap = loadTypedJSON(filename: actorToMovieFile)
+        if self.actorMap == nil {
+            print("Error loading actorToMovieFile: \(actorToMovieFile)")
         }
 
-        if let mapData = loadJSON(filename: movieFile) {
-            self.movieMap = mapData
-            if let allKeys = self.movieMap?.keys {
-                 self.levelMovies = Array(allKeys)
-                 // Initialize enumerator if needed
-                 // self.enumerator = (self.levelMovies as NSArray).objectEnumerator() // Example if NSEnumerator is kept
-            }
-            // Set the map for the movie object. This was done in GameViewController before.
-            self.movie.map = self.movieMap as? [String: [String]]
-
+        self.movieMap = loadTypedJSON(filename: movieToActorFile)
+        if self.movieMap == nil {
+            print("Error loading movieToActorFile: \(movieToActorFile)")
         } else {
-            print("Error loading movieFile: \(movieFile)")
+            if let allKeys = self.movieMap?.keys {
+                 self.levelMovieTitles = Array(allKeys)
+            }
+            // Set the map for the movie object.
+            self.movie.map = self.movieMap 
         }
         
-        // Initialize tiles based on levelFile data
-        if let levelData = loadJSON(filename: levelFile),
-           let tilesArray = levelData["tiles"] as? [[Int]] {
+        // Initialize tiles based on levelLayoutFile data
+        // Assuming levelLayoutFile contains {"tiles": [[Int]]} structure
+        if let levelLayoutData = loadGenericJSON(filename: levelLayoutFile),
+           let tilesArray = levelLayoutData["tiles"] as? [[Int]] {
             for (r, rowArray) in tilesArray.enumerated() {
                 // In Sprite Kit (0,0) is at the bottom of the screen,
                 // so we need to read this file upside down if it's not already.
                 // The Obj-C code did: NSInteger tileRow = NumRows - row - 1;
                 // Assuming r is 'row' from the JSON.
-                let tileRowForGrid = RWTLevel.NumRows - 1 - r // Convert JSON row to grid row
+                let tileRowForGrid = RWTLevel.NumRows - 1 - r // Convert JSON row to grid row (0,0 at bottom-left)
                 
                 for (c, value) in rowArray.enumerated() {
                     if c < RWTLevel.NumColumns && tileRowForGrid >= 0 && tileRowForGrid < RWTLevel.NumRows {
                         if value == 1 {
-                            let tile = RWTTile() // Assuming RWTTile is a Swift class now
+                            let tile = RWTTile() 
                             tile.tileColumn = c
-                            tile.tileRow = r // Store original JSON row, or adjust as needed
+                            tile.tileRow = r // Store original JSON row index, or tileRowForGrid if preferred
                             self.tiles[c][tileRowForGrid] = tile
                         }
                     }
                 }
             }
         } else {
-            print("Error loading levelFile: \(levelFile) or parsing 'tiles' array.")
+            print("Error loading levelLayoutFile: \(levelLayoutFile) or parsing 'tiles' array.")
         }
         
-        // Initialize enumerator for levelMovies (if still using NSEnumerator)
-        if !self.levelMovies.isEmpty {
-            self.enumerator = (self.levelMovies as NSArray).objectEnumerator()
+        // Initialize enumerator for levelMovieTitles (if still using NSEnumerator approach for nextLevel)
+        if !self.levelMovieTitles.isEmpty {
+            self.enumerator = (self.levelMovieTitles as NSArray).objectEnumerator()
         }
         
-        // Ensure movie property is initialized and its map is set
+        // Ensure movie property is initialized and its map is set (done above)
         // self.movie is already lazy initialized.
         // self.movie.map was set above.
     }
 
-    // Helper function to load JSON from a file (simplified)
-    private func loadJSON(filename: String) -> [String: Any]? {
+    // Typed JSON loading for [String: [String]]
+    private func loadTypedJSON(filename: String) -> [String: [String]]? {
         guard let path = Bundle.main.path(forResource: filename, ofType: "json") else {
-            print("Could not find the level file: \(filename).json")
+            print("Error: Could not find the JSON file: \(filename).json")
             return nil
         }
         do {
-            let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
+            let data = try Data(contentsOf: URL(fileURLWithPath: path))
+            let decodedData = try JSONDecoder().decode([String: [String]].self, from: data)
+            return decodedData
+        } catch {
+            print("Error: Could not load or parse typed JSON from file \(filename).json: \(error)")
+            return nil
+        }
+    }
+    
+    // Generic JSON loading for other structures like level layout
+    private func loadGenericJSON(filename: String) -> [String: Any]? {
+        guard let path = Bundle.main.path(forResource: filename, ofType: "json") else {
+            print("Error: Could not find the JSON file: \(filename).json")
+            return nil
+        }
+        do {
+            let data = try Data(contentsOf: URL(fileURLWithPath: path))
             let jsonResult = try JSONSerialization.jsonObject(with: data, options: .mutableLeaves)
             return jsonResult as? [String: Any]
         } catch {
-            print("Could not load or parse JSON from file \(filename).json: \(error)")
+            print("Error: Could not load or parse generic JSON from file \(filename).json: \(error)")
             return nil
         }
     }
@@ -180,44 +193,50 @@ public class RWTLevel: NSObject, GameViewDelegate {
             return
         }
 
-        currentChosenActor = [] // Reset for current selection
-        currentChosenActorNames = []
+        currentChosenActors = [actor] // Reset for current selection
+        currentChosenActorSpriteNames = []
 
-        currentChosenActor.append(actor)
-        
-        // Assuming actor.spriteName() is available and returns String?
         if let actorSpriteName = actor.spriteName() {
-            if chosenActorNames.contains(actorSpriteName) {
-                // Actor already chosen, do nothing or handle as per game logic
-                return
-            } else {
-                currentChosenActorNames.append(actorSpriteName)
-                chosenActorNames.append(actorSpriteName)
+            // Check against historically chosen names to prevent re-selecting already matched ones
+            // or apply game-specific logic for re-selection.
+            // The original `chosenActorNames` seemed to accumulate all names picked in a round.
+            // Using `historicallyChosenActorSpriteNames` for that now.
+            if historicallyChosenActorSpriteNames.contains(actorSpriteName) && actor.matched {
+                 print("Actor \(actorSpriteName) was already part of a successful match.")
+                // Depending on game rules, may or may not want to return here.
+                // For now, let's allow re-selection for potential different matches if not yet matched in *this* turn.
+                // Or, if an actor can only be matched once ever:
+                // return 
+            }
+            
+            currentChosenActorSpriteNames.append(actorSpriteName)
+            // Add to history only after a successful match, or here if all attempts should be recorded.
+            // For now, adding here to match original pattern of chosenActorNames accumulation.
+            historicallyChosenActorSpriteNames.insert(actorSpriteName)
+            
+        } else {
+            print("Warning: Chosen actor is missing a sprite name.")
+            // Potentially return or handle error
+            return
+        }
+
+        matchScore = 0 // Reset matchScore for this specific choice/attempt
+        
+        // Perform match checking.
+        // This logic implies only the *current* selection (currentChosenActorSpriteNames) is checked against the movie.
+        let matchCount = movie.match(actors: currentChosenActorSpriteNames, withMovie: movie.movieName)
+        if matchCount > 0 {
+            score += matchCount * MATCH_BONUS 
+            // Mark all actors in the current successful selection as matched
+            for selectedActor in currentChosenActors {
+                selectedActor.matched = true
             }
         } else {
-            // Handle missing sprite name if necessary
-            print("Warning: Chosen actor is missing a sprite name.")
-            return // Or proceed without name-based checks if appropriate
+            score -= UNMATCHED_PENALTY
         }
-
-        matchScore = 0 // Reset matchScore for this choice
+        self.matchScore = matchCount // Store the count of matches for this attempt
         
-        // Perform match checking
-        // The original Obj-C code iterated through `currentChosenActor` (which would be just one actor here)
-        // This loop seems redundant if currentChosenActor always has one actor.
-        // Sticking to original logic pattern for now.
-        for chosenActorInstance in currentChosenActor { // This loop will run once.
-            let matchCount = movie.match(actors: currentChosenActorNames, withMovie: movie.movieName)
-            if matchCount > 0 { // Assuming match returns count of matched items.
-                score += matchCount * MATCH_BONUS // Or just MATCH_BONUS if matchCount is bool-like
-                chosenActorInstance.machted = true // Typo 'machted' from original
-            } else {
-                score -= UNMATCHED_PENALTY
-            }
-            self.matchScore = matchCount // Store the count of matches
-        }
-        
-        print("Score: \(score), Chosen Actors: \(currentChosenActorNames.count), Match Score: \(matchScore)")
+        print("Score: \(score), Current Chosen Sprites: \(currentChosenActorSpriteNames.count), Match Result: \(matchCount)")
         print("Actor at \(actor.column), \(actor.row), Index: \(actor.actorIndex), Sprite: \(actor.spriteName() ?? "N/A")")
     }
 
@@ -232,25 +251,30 @@ public class RWTLevel: NSObject, GameViewDelegate {
         return matchedActors
     }
 
-    @objc public func fillHoles() -> RWTActor? {
-        var lastFilledActor: RWTActor? = nil
+    @objc public func fillHoles() -> Set<RWTActor> { // Changed return type
+        var newActorsSet = Set<RWTActor>()
         for c in 0..<RWTLevel.NumColumns {
-            for r in 0..<RWTLevel.NumRows {
-                if tiles[c][r] != nil && actors[c][r] == nil {
+            for r_grid in 0..<RWTLevel.NumRows { // r_grid is the visual row (0 at bottom)
+                if tiles[c][r_grid] != nil && actors[c][r_grid] == nil {
+                    // Ensure NumActors is greater than 0 to prevent crash with arc4random_uniform
+                    guard RWTActor.NumActors > 0 else {
+                        print("Error: RWTActor.NumActors is 0, cannot generate random actor index.")
+                        continue // Skip filling this hole or handle error appropriately
+                    }
                     let newActorIndex = Int(arc4random_uniform(UInt32(RWTActor.NumActors))) + 1
-                    let newActor = createActors(atColumn: c, row: r, withIndex: newActorIndex)
-                    actors[c][r] = newActor
-                    lastFilledActor = newActor
+                    let newActor = createActors(atColumn: c, row: r_grid, withIndex: newActorIndex)
+                    // The createActors method already places the actor in self.actors
+                    newActorsSet.insert(newActor)
                 }
             }
         }
-        return lastFilledActor // Returns only the last actor created
+        return newActorsSet
     }
 
     @objc public func nextLevel() -> String? {
-        guard !levelMovies.isEmpty else { return nil }
-        let randomIndex = Int(arc4random_uniform(UInt32(levelMovies.count)))
-        return levelMovies[randomIndex]
+        guard !levelMovieTitles.isEmpty else { return nil }
+        let randomIndex = Int(arc4random_uniform(UInt32(levelMovieTitles.count)))
+        return levelMovieTitles[randomIndex]
     }
     
     // Internal logic methods
@@ -259,7 +283,7 @@ public class RWTLevel: NSObject, GameViewDelegate {
         var set = Set<RWTActor>()
         for c in 0..<RWTLevel.NumColumns {
             for r in 0..<RWTLevel.NumRows {
-                if let actor = actors[c][r], actor.machted { // Typo 'machted'
+                if let actor = actors[c][r], actor.matched { // Corrected typo
                     set.insert(actor)
                 }
             }

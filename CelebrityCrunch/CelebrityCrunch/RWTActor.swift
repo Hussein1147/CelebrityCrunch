@@ -1,135 +1,108 @@
 import Foundation
 import SpriteKit // For SKSpriteNode
 
-// Using NSNotFound for consistency if this value is used in Obj-C parts that expect it.
-// Otherwise, returning an optional Int? (nil for not found) would be more Swifty.
-// public let NSNotFound: Int = -1 // Standard definition
+// Standard definition for NSNotFound, used for Objective-C compatibility
+public let NSNotFound: Int = -1 
+
+// Struct for Codable JSON parsing
+struct ActorDefinition: Codable {
+    let id: Int // 1-based index
+    let name: String
+    let spriteBase: String
+    let highlightedSuffix: String
+    let blueSuffix: String
+}
 
 @objc(RWTActor)
 public class RWTActor: NSObject {
 
-    @objc public var actorName: String = "" // May not be strictly needed if actorIndex is the primary ID
+    @objc public var actorName: String = "" // May be redundant if actorIndex is primary ID
     @objc public var column: Int = 0
     @objc public var row: Int = 0
     @objc public var actorIndex: Int = 0 // 1-based index from JSON
     @objc public var sprite: SKSpriteNode?
-    @objc public var machted: Bool = false // Typo for 'matched'
+    @objc public var matched: Bool = false // Corrected typo from 'machted'
 
-    // Default initializer
     public override init() {
         super.init()
-        // Call loadActorDefinitions to ensure data is ready when an instance is created,
-        // especially if actorName might be set based on actorIndex soon after.
-        // However, instance methods like spriteName() will call it lazily if not.
-        // RWTActor.loadActorDefinitions() // Not strictly necessary here due to lazy loading in accessors
     }
     
-    // --- Static Data & JSON Loading ---
+    // --- Static Data & JSON Loading with Codable ---
 
-    public static let NumActors = 70 // Or derive from _actorDefinitions.count after loading
-
-    // Private static properties for lazy loading JSON data
-    private static let _actorDefinitionsStorage: [[String: Any]]? = {
+    // Private static properties for lazy loading JSON data using Codable
+    private static let _actorDefinitionsStorage: [ActorDefinition]? = {
         guard let path = Bundle.main.path(forResource: "Actors", ofType: "json") else {
-            print("Could not find Actors.json")
-            return []
+            print("Error: Could not find Actors.json")
+            return [] // Return empty on error
         }
         do {
-            let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
-            let jsonResult = try JSONSerialization.jsonObject(with: data, options: .mutableLeaves)
-            if let jsonArray = jsonResult as? [[String: Any]] {
-                if jsonArray.count != NumActors {
-                    print("Warning: NumActors constant (\(NumActors)) does not match loaded actor definitions count (\(jsonArray.count)).")
-                }
-                return jsonArray
-            }
+            let data = try Data(contentsOf: URL(fileURLWithPath: path))
+            let definitions = try JSONDecoder().decode([ActorDefinition].self, from: data)
+            // Warning if NumActors (dynamic) doesn't match a fixed expectation if one existed.
+            // print("Loaded \(definitions.count) actor definitions.")
+            return definitions
         } catch {
-            print("Could not load or parse Actors.json: \(error)")
+            print("Error: Could not load or parse Actors.json: \(error)")
         }
-        return [] // Return empty on error to prevent repeated load attempts
+        return [] // Return empty on error
     }()
 
-    private static let _actorDefinitionsByNameStorage: [String: [String: Any]]? = {
+    private static let _actorDefinitionsByNameStorage: [String: ActorDefinition]? = {
         guard let definitions = _actorDefinitionsStorage else { return [:] }
-        var byName: [String: [String: Any]] = [:]
-        for actorDict in definitions {
-            if let name = actorDict["name"] as? String {
-                byName[name] = actorDict
-            }
+        var byName: [String: ActorDefinition] = [:]
+        for actorDef in definitions {
+            byName[actorDef.name] = actorDef
         }
         return byName
     }()
 
-    // Publicly accessible static computed properties that use the lazy storage
-    public static var actorDefinitions: [[String: Any]]? {
+    // Publicly accessible static computed property for NumActors
+    @objc public static var NumActors: Int {
+        return _actorDefinitionsStorage?.count ?? 0
+    }
+
+    // Publicly accessible static computed properties for actor definitions
+    // These are not directly @objc as they return Swift-specific types.
+    // Use @objc static func versions for Obj-C access if needed for the collections themselves.
+    public static var actorDefinitions: [ActorDefinition]? {
         return _actorDefinitionsStorage
     }
 
-    public static var actorDefinitionsByName: [String: [String: Any]]? {
+    public static var actorDefinitionsByName: [String: ActorDefinition]? {
         return _actorDefinitionsByNameStorage
     }
     
-    // No explicit loadActorDefinitions() needed due to lazy static properties.
-    // Accessing actorDefinitions or actorDefinitionsByName will trigger the load.
-
-    @objc public static func actorData(forIndex index: Int) -> [String: Any]? { // index is 1-based
+    // @objc method to get actor data, returning NSDictionary for Obj-C compatibility
+    // Changed to return ActorDefinition? for Swift, Obj-C will need bridging if directly accessing
+    @objc public static func actorData(forIndex index: Int) -> ActorDefinition? { // index is 1-based
         guard let definitions = self.actorDefinitions, index > 0, index <= definitions.count else {
-            print("Error: actorData(forIndex:) index \(index) out of bounds (1-\(self.actorDefinitions?.count ?? 0)).")
+            // print("Error: actorData(forIndex:) index \(index) out of bounds (1-\(self.NumActors)).")
             return nil
         }
         return definitions[index - 1] // Convert 1-based to 0-based
     }
 
     @objc public static func actorIndex(forName name: String) -> Int { // returns 1-based index or NSNotFound
-        guard let definitionsByName = self.actorDefinitionsByName, let actorDict = definitionsByName[name], let id = actorDict["id"] as? Int else {
+        guard let definitionsByName = self.actorDefinitionsByName, let actorDef = definitionsByName[name] else {
             return NSNotFound 
         }
-        return id
+        return actorDef.id
     }
 
     // --- Instance Methods ---
 
     @objc public func spriteName() -> String? {
-        guard let data = RWTActor.actorData(forIndex: self.actorIndex) else { return nil }
-        return data["spriteBase"] as? String
+        guard let def = RWTActor.actorData(forIndex: self.actorIndex) else { return nil }
+        return def.spriteBase
     }
 
     @objc public func highlightedSpriteName() -> String? {
-        guard let data = RWTActor.actorData(forIndex: self.actorIndex),
-              let base = data["spriteBase"] as? String,
-              let suffix = data["highlightedSuffix"] as? String else { return nil }
-        return "\(base)\(suffix)"
+        guard let def = RWTActor.actorData(forIndex: self.actorIndex) else { return nil }
+        return "\(def.spriteBase)\(def.highlightedSuffix)"
     }
 
-    // Corrected typo from blueHilightedSpriteNames
     @objc public func blueHighlightedSpriteName() -> String? {
-        guard let data = RWTActor.actorData(forIndex: self.actorIndex),
-              let base = data["spriteBase"] as? String,
-              let suffix = data["blueSuffix"] as? String else { return nil }
-        return "\(base)\(suffix)"
+        guard let def = RWTActor.actorData(forIndex: self.actorIndex) else { return nil }
+        return "\(def.spriteBase)\(def.blueSuffix)"
     }
-    
-    // The Objective-C instance method -(NSUInteger)actorIndex:(NSString *)actorName is omitted.
-    // RWTLevel.m was already updated to use `[RWTActor actorIndexForName:]` which will now
-    // map to the static Swift func `RWTActor.actorIndex(forName:)`.
-    // The conversion from 1-based ID (from JSON) to 0-based index, if needed by specific
-    // Obj-C clients, should be handled by those clients or via a specific Swift helper if required.
-    // RWTLevel.m's createCurrentMovieActors was:
-    // NSInteger actorIdFromName = [RWTActor actorIndexForName:selectedActorName]; // This is 1-based or NSNotFound
-    // if (actorIdFromName != NSNotFound) { index = actorIdFromName; /* this index is 1-based */ }
-    // This pattern is compatible with the new Swift static method.
 }
-
-// Helper for DispatchQueue.once behavior if needed, though lazy static vars are preferred.
-// public extension DispatchQueue {
-//    private static var _onceTracker = [String]()
-//    static func once(token: String, block: () -> Void) {
-//        objc_sync_enter(self)
-//        defer { objc_sync_exit(self) }
-//        if _onceTracker.contains(token) { return }
-//        _onceTracker.append(token)
-//        block()
-//    }
-// }
-// Example usage: DispatchQueue.once(token: "com.example.loadActorDefinitions", block: { ... })
-// But for this case, lazy static properties achieve the goal more simply.
