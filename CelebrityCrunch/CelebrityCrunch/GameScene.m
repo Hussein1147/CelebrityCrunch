@@ -231,17 +231,52 @@ static const CGFloat TileHeight = 95.0;
 }
 
 -(void)animateFallingActors:(RWTActor *)actor completion:(dispatch_block_t)completion {
-    
-    NSSet *set = [NSSet setWithObject:actor];
-    if ([set count] == 0) {
+    // 1. If actor is nil, call completion and return immediately.
+    if (!actor) {
+        if (completion) {
+            completion();
+        }
         return;
-    }else{
-    [self addSpritesForActors:set];
-    CGMutablePathRef path = CGPathCreateMutable();
-    CGPathMoveToPoint(path, NULL,300,300);
-    CGPathAddLineToPoint(path, NULL,actor.column,actor.row);
-        SKAction *followline = [SKAction followPath:path asOffset:YES orientToPath:NO duration:0.5];    [actor.sprite runAction:[SKAction sequence:@[followline, [SKAction runBlock:completion]]]];
     }
+
+    // 2. Create the sprite
+    SKSpriteNode *sprite = [SKSpriteNode spriteNodeWithImageNamed:[actor spriteName]];
+
+    // 3. Assign it to the actor
+    actor.sprite = sprite;
+
+    // 4. Calculate the destination point (relative to actorLayer)
+    CGPoint destinationPoint = [self pointForColumn:actor.column row:actor.row];
+
+    // 5. Define a starting Y position (one tile above the grid, in actorLayer coordinates)
+    // pointForColumn:row: calculates destinationPoint.x correctly relative to actorLayer.
+    // For startPoint.y, we want it to be above the grid.
+    // The grid rows are 0 to NumRows-1.
+    // The top of the highest tile (row NumRows-1) is (NumRows-1)*TileHeight + TileHeight/2 + TileHeight/2 = NumRows*TileHeight.
+    // So, one tile above that would be NumRows*TileHeight + TileHeight/2.
+    CGFloat startY = (NumRows * TileHeight) + TileHeight / 2.0f;
+    CGPoint startPoint = CGPointMake(destinationPoint.x, startY);
+
+    // 6. Set the sprite's initial position
+    sprite.position = startPoint;
+
+    // 7. Add the sprite to the actor layer
+    [self.actorLayer addChild:sprite];
+
+    // 8. Create the path (using absolute coordinates within actorLayer)
+    CGMutablePathRef path = CGPathCreateMutable();
+    CGPathMoveToPoint(path, NULL, startPoint.x, startPoint.y);
+    CGPathAddLineToPoint(path, NULL, destinationPoint.x, destinationPoint.y);
+
+    // 9. Create the action
+    SKAction *moveAction = [SKAction followPath:path asOffset:NO orientToPath:NO duration:0.3];
+    moveAction.timingMode = SKActionTimingEaseOut; // Smoother fall
+
+    // 10. Run the sequence
+    [sprite runAction:[SKAction sequence:@[moveAction, [SKAction runBlock:completion]]]];
+
+    // 11. Release path
+    CGPathRelease(path);
 }
 
 #pragma mark - point conversion

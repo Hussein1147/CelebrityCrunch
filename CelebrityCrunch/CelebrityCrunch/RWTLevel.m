@@ -115,8 +115,8 @@ static const int UNMATCHE_PENALTY =1;
 
 
     RWTActor *actor =  _actors[column][row];
-    self.currentChosenActor =nil;
-    self.currentChosenActorNames =nil;
+    self.currentChosenActor = [NSMutableArray array];
+    self.currentChosenActorNames = [NSMutableArray array];
         [self.currentChosenActor addObject:actor];
     self.matchScore = 0;
     if ([self.currentChosenActor count]) {
@@ -266,41 +266,49 @@ static const int UNMATCHE_PENALTY =1;
     NSArray *arrayWithTile;
     NSInteger colum;
     NSInteger row;
-    RWTActor *actor;
+    RWTActor *actor = nil; // Initialize actor to nil
+    NSArray *movieActorNames = [self.movie getActorListforMovie:self.movie.movieName];
 
-    if([self.movie getActorListforMovie:self.movie.movieName] !=nil)
-    
-    {
-    NSMutableArray *movieActors =[NSMutableArray arrayWithObject:[self.movie getActorListforMovie:self.movie.movieName]];
-        
-        NSLog(@"MovieAcotrs: %@", movieActors);
-        NSMutableSet *movieActorSet= [NSMutableSet setWithArray:movieActors];
-        NSSet *setWithCurrentActor = [self getActors];
-        if (setWithCurrentActor != nil) {
-            [movieActorSet intersectSet:setWithCurrentActor];
-            NSArray *resultingArray = [movieActorSet allObjects];
-            
-            NSLog(@"Resulting array: %@",resultingArray);
+    if (movieActorNames != nil && [movieActorNames count] > 0) {
+        NSLog(@"MovieActorNames: %@", movieActorNames);
+
+        // Select a random actor name from the list
+        NSUInteger randomIndexInMovie = arc4random_uniform((uint32_t)[movieActorNames count]);
+        NSString *selectedActorName = [movieActorNames objectAtIndex:randomIndexInMovie];
+
+        // Get the 0-based sprite index for this actor name using the new class method
+        // RWTActor's actorIndexForName: returns 1-based ID or NSNotFound.
+        // The instance method actorIndex: (if it were still used) was updated to return 0-based or NSNotFound.
+        // For direct call to class method, we get 1-based ID.
+        NSInteger actorIdFromName = [RWTActor actorIndexForName:selectedActorName];
+
+        if (actorIdFromName == NSNotFound) {
+            NSLog(@"Error: Actor name %@ not found in definitions.", selectedActorName);
+            actor = nil; // Ensure actor is nil and skip further processing for this actor
+        } else {
+            // actorIdFromName is 1-based. For actor.actorIndex, which is used by spriteName etc.
+            // methods that expect 1-based index from JSON.
+            index = actorIdFromName; 
+
+            NSSet *tileSet = [self getTiles];
+            if ([tileSet count] > 0) { // Ensure there are tiles to place the actor on
+                arrayWithTile = [self randomObject:tileSet];
+                colum = [arrayWithTile[0] integerValue];
+                row = [arrayWithTile[1] integerValue];
+                // 'index' here is the 1-based actorId, which is what createActorsAtColumn expects for actor.actorIndex
+                actor = [self createActorsAtColumn:colum row:row withIndex:index]; 
+                
+                NSLog(@"Placed actor %@ (ID: %ld) at column: %ld, row: %ld for movie: %@", selectedActorName, (long)index, (long)colum, (long)row, self.movie.movieName);
+            } else {
+                NSLog(@"No tiles available to place actor for movie: %@", self.movie.movieName);
+                actor = nil; // Ensure actor is nil if not placed
+            }
         }
-
-    RWTActor *movieActor = [[RWTActor alloc]init];
-    
-        
-    NSUInteger radomIndex = arc4random_uniform((uint32_t)[movieActors count]);
-    NSUInteger Rawindex = [movieActor actorIndex:[[movieActors firstObject] objectAtIndex:radomIndex]];
-    index = Rawindex + 1;
-
-    NSSet *tileSet =  [self getTiles];
-    arrayWithTile = [self randomObject:tileSet];
-        colum = [arrayWithTile[0] integerValue];
-        row= [arrayWithTile[1] integerValue];
-        actor = [self createActorsAtColumn:colum row:row withIndex:index];
-        
-        NSLog(@"Index:%ld", index);
-        
+    } else {
+        NSLog(@"No actors found for movie: %@", self.movie.movieName);
+        actor = nil; // Ensure actor is nil if no movie actor names
     }
     return actor;
-
 }
 -(RWTActor *)createActorsAtColumn:(NSInteger)column row:(NSInteger)row withIndex:(NSInteger)actorIndex{
     RWTActor *actor = [[RWTActor alloc]init];
