@@ -8,479 +8,144 @@
 
 #import "RWTActor.h"
 
+// Define NumActors based on the count from JSON, or keep it fixed if JSON is guaranteed to have this many.
+// For now, we'll keep the extern declaration and define it after loading.
+const NSUInteger NumActors = 70; // Default, will be updated if JSON loading is successful and count differs.
+
 @interface RWTActor ()
 
 @end
 
+// Static variables to hold loaded actor data
+static NSArray *_actorDefinitions = nil;
+static NSDictionary *_actorDefinitionsByName = nil;
+static dispatch_once_t _loadActorsOnceToken;
+
+
 @implementation RWTActor
 
-
-
--(NSString *)spriteName{
-    
-    static NSString *const spriteNames[] ={
-        
-        @"Robert-Redford",
-        
-        @"Drew-Barrymore",
-        
-        @"Robert-Downey-Jr.",
-       
-        @"Al-Pacino",
-        
-        @"Dustin-Hoffman",
-        
-        @"Jennifer-Aniston",
-        
-        @"Kate-Hudson",
-        
-        @"Robin-Williams",
-        
-        @"Jodie-Foster",
-        
-        @"Christian-Bale",
-        
-        @"Anne-Hathaway",
-        
-        @"Eddie-Murphy",
-        
-        @"Angelina-Jolie",
-        
-        @"Matthew-McConaughey",
-        
-        @"Michael-Keaton",
-        
-        @"Hugh-Jackman",
-        
-        @"Nicolas-Cage",
-        
-        @"George-Clooney",
-        
-        @"Meryl-Streep",
-        
-        @"Cate-Blanchett",
-        
-        @"Tom-Cruise",
-        
-        @"Will-Smith",
-        
-        @"Jack-Black",
-        
-        @"Adam-Sandler",
-        
-        @"Jackie-Chan",
-        
-        @"Clive-Owen",
-        
-        @"Hugh-Grant",
-        
-        @"Jack-Nicholson",
-        
-        @"Nicole-Kidman",
-        
-        @"Robert-De-Niro",
-        
-        @"Steve-Carell",
-        
-        @"Jake-Gyllenhaal",
-        
-        @"Ben-Stiller",
-        
-        @"Keira-Knightley",
-        
-        @"Daniel-Craig",
-        
-        @"Gwyneth-Paltrow",
-        
-        @"Russell-Crowe",
-        
-        @"Sean-Penn",
-        
-        @"Anthony-Hopkins",
-        
-        @"Clint-Eastwood",
-        
-        @"Edward-Norton",
-        
-        @"Keanu-Reeves",
-        
-        @"Richard-Gere",
-        
-        @"Mel-Gibson",
-        
-        @"Sacha-Baron-Cohen",
-        
-        @"Charlize-Theron",
-        
-        @"Halle-Berry",
-        
-        @"Bruce-Willis",
-        
-        @"Penelope-Cruz",
-        
-        @"Sandra-Bullock",
-        
-        @"Daniel-Day-Lewis",
-        
-        @"Brad-Pitt",
-        
-        @"Will-Ferrell",
-        
-        @"Natalie-Portman",
-        
-        @"Johnny-Depp",
-        
-        @"Cameron-Diaz",
-        
-        @"Matt-Damon",
-        
-        @"Kate-Winslet",
-        
-        @"Renee-Zellweger",
-        
-        @"Scarlett-Johansson",
-        
-        @"Catherine-Zeta-Jones",
-        
-        @"Denzel-Washington",
-        
-        @"Harrison-Ford",
-        
-        @"Julia-Roberts",
-        
-        @"Reese-Witherspoon",
-        
-        @"Tom-Hanks",
-        
-        @"Jim-Carrey",
-        
-        @"Leonardo-DiCaprio",
-        
-        @"Hilary-Swank",
-        
-        @"Mark-Wahlberg"
-        
-        
-
-    
-    };
-    
-    return spriteNames[self.actorIndex-1];
-    
++ (void)loadActorDefinitions {
+    dispatch_once(&_loadActorsOnceToken, ^{
+        NSString *path = [[NSBundle mainBundle] pathForResource:@"Actors" ofType:@"json"];
+        if (path == nil) {
+            NSLog(@"Could not find Actors.json");
+            _actorDefinitions = @[]; // Empty array to prevent further load attempts
+            _actorDefinitionsByName = @{};
+            return;
+        }
+        
+        NSError *error;
+        NSData *data = [NSData dataWithContentsOfFile:path options:0 error:&error];
+        if (data == nil) {
+            NSLog(@"Could not load data from Actors.json: %@", error.localizedDescription);
+            _actorDefinitions = @[];
+            _actorDefinitionsByName = @{};
+            return;
+        }
+        
+        NSArray *jsonArray = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
+        if (jsonArray == nil || ![jsonArray isKindOfClass:[NSArray class]]) {
+            NSLog(@"Could not parse Actors.json: %@", error.localizedDescription);
+            _actorDefinitions = @[];
+            _actorDefinitionsByName = @{};
+            return;
+        }
+        
+        _actorDefinitions = jsonArray;
+        NSMutableDictionary *byName = [NSMutableDictionary dictionaryWithCapacity:[_actorDefinitions count]];
+        for (NSDictionary *actorDict in _actorDefinitions) {
+            NSString *name = actorDict[@"name"];
+            if (name) {
+                [byName setObject:actorDict forKey:name];
+            }
+        }
+        _actorDefinitionsByName = [byName copy];
+        
+        // Optionally update NumActors if it should be dynamic
+        // NumActors = [_actorDefinitions count]; // Uncomment if NumActors should reflect actual loaded count
+        if ([_actorDefinitions count] != NumActors) {
+             NSLog(@"Warning: NumActors constant (%lu) does not match loaded actor definitions count (%lu).", (unsigned long)NumActors, (unsigned long)[_actorDefinitions count]);
+        }
+    });
 }
 
-
--(NSString *)highlightedSpriteName{
-
-    static NSString * const hilightedSpriteNames [] = {
-    
-        @"Robert-Redford-hilighted",
-        
-        @"Drew-Barrymore-hilighted",
-        
-        @"Robert-Downey-Jr.-hilighted",
-        
-        @"Al-Pacino-hilighted",
-        
-        @"Dustin-Hoffman-hilighted",
-        
-        @"Jennifer-Aniston-hilighted",
-        
-        @"Kate-Hudson-hilighted",
-        
-        @"Robin-Williams-hilighted",
-        
-        @"Jodie-Foster-hilighted",
-        
-        @"Christian-Bale-hilighted",
-        
-        @"Anne-Hathaway-hilighted",
-        
-        @"Eddie-Murphy-hilighted",
-        
-        @"Angelina-Jolie-hilighted",
-        
-        @"Matthew-McConaughey-hilighted",
-        
-        @"Michael-Keaton-hilighted",
-        
-        @"Hugh-Jackman-hilighted",
-        
-        @"Nicolas-Cage-hilighted",
-        
-        @"George-Clooney-hilighted",
-        
-        @"Meryl-Streep-hilighted",
-        
-        @"Cate-Blanchett-hilighted",
-        
-        @"Tom-Cruise-hilighted",
-        
-        @"Will-Smith-hilighted",
-        
-        @"Jack-Black-hilighted",
-        
-        @"Adam-Sandler-hilighted",
-        
-        @"Jackie-Chan-hilighted",
-        
-        @"Clive-Owen-hilighted",
-        
-        @"Hugh-Grant-hilighted",
-        
-        @"Jack-Nicholson-hilighted",
-        
-        @"Nicole-Kidman-hilighted",
-        
-        @"Robert-De-Niro-hilighted",
-        
-        @"Steve-Carell-hilighted",
-        
-        @"Jake-Gyllenhaal-hilighted",
-        
-        @"Ben-Stiller-hilighted",
-        
-        @"Keira-Knightley-hilighted",
-        
-        @"Daniel-Craig-hilighted",
-        
-        @"Gwyneth-Paltrow-hilighted",
-        
-        @"Russell-Crowe-hilighted",
-        
-        @"Sean-Penn-hilighted",
-        
-        @"Anthony-Hopkins-hilighted",
-        
-        @"Clint-Eastwood-hilighted",
-        
-        @"Edward-Norton-hilighted",
-        
-        @"Keanu-Reeves-hilighted",
-        
-        @"Richard-Gere-hilighted",
-        
-        @"Mel-Gibson-hilighted",
-        
-        @"Sacha-Baron-Cohen-hilighted",
-        
-        @"Charlize-Theron-hilighted",
-        
-        @"Halle-Berry-hilighted",
-        
-        @"Bruce-Willis-hilighted",
-        
-        @"Penelope-Cruz-hilighted",
-        
-        @"Sandra-Bullock-hilighted",
-        
-        @"Daniel-Day-Lewis-hilighted",
-        
-        @"Brad-Pitt-hilighted",
-        
-        @"Will-Ferrell-hilighted",
-        
-        @"Natalie-Portman-hilighted",
-        
-        @"Johnny-Depp-hilighted",
-        
-        @"Cameron-Diaz-hilighted",
-        
-        @"Matt-Damon-hilighted",
-        
-        @"Kate-Winslet-hilighted",
-        
-        @"Renee-Zellweger-hilighted",
-        
-        @"Scarlett-Johansson-hilighted",
-        
-        @"Catherine-Zeta-Jones-hilighted",
-        
-        @"Denzel-Washington-hilighted",
-        
-        @"Harrison-Ford-hilighted",
-        
-        @"Julia-Roberts-hilighted",
-        
-        @"Reese-Witherspoon-hilighted",
-        
-        @"Tom-Hanks-hilighted",
-        
-        @"Jim-Carrey-hilighted",
-        
-        @"Leonardo-DiCaprio-hilighted",
-        
-        @"Hilary-Swank-hilighted",
-        
-        @"Mark-Wahlberg-hilighted" ,
-    
-    
-    
-    };
-
-    return hilightedSpriteNames[self.actorIndex-1];
-}
--(NSUInteger)actorIndex:(NSString *)actorName{
-    NSArray *array = @[
-        @"Robert-Redford",
-        
-        @"Drew-Barrymore",
-    
-        @"Robert-Downey-Jr.",
-        
-        @"Al-Pacino",
-        
-        @"Dustin-Hoffman",
-        
-        @"Jennifer-Aniston",
-        
-        @"Kate-Hudson",
-        
-        @"Robin-Williams",
-        
-        @"Jodie-Foster",
-        
-        @"Christian-Bale",
-        
-        @"Anne-Hathaway",
-        
-        @"Eddie-Murphy",
-        
-        @"Angelina-Jolie",
-        
-        @"Matthew-McConaughey",
-        
-        @"Michael-Keaton",
-        
-        @"Hugh-Jackman",
-        
-        @"Nicolas-Cage",
-        
-        @"George-Clooney",
-        
-        @"Meryl-Streep",
-        
-        @"Cate-Blanchett",
-        
-        @"Tom-Cruise",
-        
-        @"Will-Smith",
-        
-        @"Jack-Black",
-        
-        @"Adam-Sandler",
-        
-        @"Jackie-Chan",
-        
-        @"Clive-Owen",
-        
-        @"Hugh-Grant",
-        
-        @"Jack-Nicholson",
-        
-        @"Nicole-Kidman",
-        
-        @"Robert-De-Niro",
-        
-        @"Steve-Carell",
-        
-        @"Jake-Gyllenhaal",
-        
-        @"Ben-Stiller",
-        
-        @"Keira-Knightley",
-        
-        @"Daniel-Craig",
-        
-        @"Gwyneth-Paltrow",
-        
-        @"Russell-Crowe",
-        
-        @"Sean-Penn",
-        
-        @"Anthony-Hopkins",
-        
-        @"Clint-Eastwood",
-        
-        @"Edward-Norton",
-        
-        @"Keanu-Reeves",
-        
-        @"Richard-Gere",
-        
-        @"Mel-Gibson",
-        
-        @"Sacha-Baron-Cohen",
-        
-        @"Charlize-Theron",
-        
-        @"Halle-Berry",
-        
-        @"Bruce-Willis",
-        
-        @"Penelope-Cruz",
-        
-        @"Sandra-Bullock",
-        
-        @"Daniel-Day-Lewis",
-        
-        @"Brad-Pitt",
-        
-        @"Will-Ferrell",
-        
-        @"Natalie-Portman",
-        
-        @"Johnny-Depp",
-        
-        @"Cameron-Diaz",
-        
-        @"Matt-Damon",
-        
-        @"Kate-Winslet",
-        
-        @"Renee-Zellweger",
-        
-        @"Scarlett-Johansson",
-        
-        @"Catherine-Zeta-Jones",
-        
-        @"Denzel-Washington",
-        
-        @"Harrison-Ford",
-        
-        @"Julia-Roberts",
-        
-        @"Reese-Witherspoon",
-        
-        @"Tom-Hanks",
-        
-        @"Jim-Carrey",
-        
-        @"Leonardo-DiCaprio",
-        
-        @"Hilary-Swank",
-        
-        @"Mark-Wahlberg"];
-    
-    NSUInteger index =  [array indexOfObject:actorName];
-
-    return index;
++ (NSDictionary *)actorDataForIndex:(NSInteger)index { // index is 1-based
+    [RWTActor loadActorDefinitions];
+    if (index > 0 && index <= [_actorDefinitions count]) {
+        return _actorDefinitions[index - 1]; // Convert 1-based to 0-based for array access
+    }
+    NSLog(@"Error: actorDataForIndex: index %ld out of bounds (1-%lu).", (long)index, (unsigned long)[_actorDefinitions count]);
+    return nil;
 }
 
--(NSString *)blueHilightedSpriteNames{
-
-    static NSString *const bluespriteName []  ={
-     @"Robert-Redford-blue", @"Drew-Barrymore-blue", @"Robert-Downey-Jr.-blue", @"Al-Pacino-blue", @"Dustin-Hoffman-blue", @"Jennifer-Aniston-blue", @"Kate-Hudson-blue", @"Robin-Williams-blue", @"Jodie-Foster-blue", @"Christian-Bale-blue", @"Anne-Hathaway-blue", @"Eddie-Murphy-blue", @"Angelina-Jolie-blue", @"Matthew-McConaughey-blue", @"Michael-Keaton-blue", @"Hugh-Jackman-blue", @"Nicolas-Cage-blue", @"George-Clooney-blue", @"Meryl-Streep-blue", @"Cate-Blanchett-blue", @"Tom-Cruise-blue", @"Will-Smith-blue", @"Jack-Black-blue", @"Adam-Sandler-blue", @"Jackie-Chan-blue", @"Clive-Owen-blue", @"Hugh-Grant-blue", @"Jack-Nicholson-blue", @"Nicole-Kidman-blue", @"Robert-De-Niro-blue", @"Steve-Carell-blue", @"Jake-Gyllenhaal-blue", @"Ben-Stiller-blue", @"Keira-Knightley-blue", @"Daniel-Craig-blue", @"Gwyneth-Paltrow-blue", @"Russell-Crowe-blue", @"Sean-Penn-blue", @"Anthony-Hopkins-blue", @"Clint-Eastwood-blue", @"Edward-Norton-blue", @"Keanu-Reeves-blue", @"Richard-Gere-blue", @"Mel-Gibson-blue", @"Sacha-Baron-Cohen-blue", @"Charlize-Theron-blue", @"Halle-Berry-blue", @"Bruce-Willis-blue", @"Penelope-Cruz-blue", @"Sandra-Bullock-blue", @"Daniel-Day-Lewis-blue", @"Brad-Pitt-blue", @"Will-Ferrell-blue", @"Natalie-Portman-blue", @"Johnny-Depp-blue", @"Cameron-Diaz-blue", @"Matt-Damon-blue", @"Kate-Winslet-blue", @"Renee-Zellweger-blue", @"Scarlett-Johansson-blue", @"Catherine-Zeta-Jones-blue", @"Denzel-Washington-blue", @"Harrison-Ford-blue", @"Julia-Roberts-blue", @"Reese-Witherspoon-blue", @"Tom-Hanks-blue", @"Jim-Carrey-blue", @"Leonardo-DiCaprio-blue", @"Hilary-Swank-blue", @"Mark-Wahlberg-blue"
-    
-    };
-    return bluespriteName[self.actorIndex-1];
-
++ (NSInteger)actorIndexForName:(NSString *)name { // returns 1-based index
+    [RWTActor loadActorDefinitions];
+    NSDictionary *actorDict = _actorDefinitionsByName[name];
+    if (actorDict) {
+        return [actorDict[@"id"] integerValue];
+    }
+    return NSNotFound; // Or 0 if that's the convention for not found
 }
+
+-(NSString *)spriteName {
+    NSDictionary *data = [RWTActor actorDataForIndex:self.actorIndex];
+    return data[@"spriteBase"]; // Assuming spriteBase is the direct name for SKTexture
+}
+
+-(NSString *)highlightedSpriteName {
+    NSDictionary *data = [RWTActor actorDataForIndex:self.actorIndex];
+    if (data && data[@"spriteBase"] && data[@"highlightedSuffix"]) {
+        return [NSString stringWithFormat:@"%@%@", data[@"spriteBase"], data[@"highlightedSuffix"]];
+    }
+    return nil; // Or a default/error sprite name
+}
+
+// Corrected typo from blueHilightedSpriteNames to blueHighlightedSpriteName
+-(NSString *)blueHighlightedSpriteName {
+    NSDictionary *data = [RWTActor actorDataForIndex:self.actorIndex];
+     if (data && data[@"spriteBase"] && data[@"blueSuffix"]) {
+        return [NSString stringWithFormat:@"%@%@", data[@"spriteBase"], data[@"blueSuffix"]];
+    }
+    return nil; // Or a default/error sprite name
+}
+
+// Instance method uses the new class method
+-(NSUInteger)actorIndex:(NSString *)actorName {
+    NSInteger index = [RWTActor actorIndexForName:actorName];
+    if (index == NSNotFound) {
+        // Handle NSNotFound appropriately, perhaps return 0 or a specific error value
+        // For now, returning 0 to match previous behavior if actorName was not in the static array.
+        // However, the original returned index (0 to 69). actorIndexForName returns 1-70 or NSNotFound.
+        // The caller in RWTLevel expects 0-based index from this method.
+        // Let's adjust to return 0-based index or NSNotFound (which is a large unsigned value).
+        // If a 0-based index is strictly required by the caller, this needs careful mapping.
+        // The problem description mentions: "NSUInteger actorSpriteIndex = [tempActorForIndex actorIndex:selectedActorName];"
+        // and "index = actorSpriteIndex + 1;"
+        // This means the original actorIndex: method returned a 0-based index.
+        // So, if [RWTActor actorIndexForName:actorName] returns 1-based ID, we subtract 1.
+        
+        // If actorIndexForName returns 1-based ID (e.g., 1 for Robert-Redford)
+        // and the old system returned 0 for "Robert-Redford", then we need to return id-1.
+        // If NSNotFound, return NSNotFound or handle as error.
+        return NSNotFound; // Or some other error indicator if 0 is a valid index
+    }
+    return index -1; // Convert 1-based ID from JSON to 0-based index
+}
+
 
 -(NSArray *)getMovieListForActor:(RWTActor*)actor withMap:(NSDictionary *)map{
-    NSString *actorName = [actor spriteName];
-    return [map objectForKey:actorName];
-
+    // This method might need to get the actor's name using the new system
+    // if actor.actorName is not reliably set from outside.
+    // Assuming actor.actorIndex is set, we can get the name:
+    NSDictionary *actorData = [RWTActor actorDataForIndex:actor.actorIndex];
+    NSString *actorNameFromData = actorData[@"name"];
+    
+    if (actorNameFromData) {
+        return [map objectForKey:actorNameFromData];
+    }
+    // Fallback or error if name isn't found, though spriteName would also fail.
+    // Original used [actor spriteName] which now uses the new system too.
+    return [map objectForKey:[actor spriteName]]; // This should still work
 }
 
 @end

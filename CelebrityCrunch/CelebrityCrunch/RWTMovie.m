@@ -23,9 +23,8 @@
     if(!_actorList) _actorList = [[NSArray alloc]init];
     return _actorList;
 }
--(NSArray *)getActorListforMovie:(NSString *)movieName{
-        movieName = self.movieName;
-        return [self.map objectForKey:movieName];
+-(NSArray *)getActorListforMovie:(NSString *)movieNameInput{
+        return [self.map objectForKey:movieNameInput];
 
 }
 

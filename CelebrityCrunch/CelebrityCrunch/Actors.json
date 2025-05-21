@@ -1,0 +1,492 @@
+[
+  {
+    "id": 1,
+    "name": "Robert-Redford",
+    "spriteBase": "Robert-Redford",
+    "highlightedSuffix": "-hilighted",
+    "blueSuffix": "-blue"
+  },
+  {
+    "id": 2,
+    "name": "Drew-Barrymore",
+    "spriteBase": "Drew-Barrymore",
+    "highlightedSuffix": "-hilighted",
+    "blueSuffix": "-blue"
+  },
+  {
+    "id": 3,
+    "name": "Robert-Downey-Jr.",
+    "spriteBase": "Robert-Downey-Jr.",
+    "highlightedSuffix": "-hilighted",
+    "blueSuffix": "-blue"
+  },
+  {
+    "id": 4,
+    "name": "Al-Pacino",
+    "spriteBase": "Al-Pacino",
+    "highlightedSuffix": "-hilighted",
+    "blueSuffix": "-blue"
+  },
+  {
+    "id": 5,
+    "name": "Dustin-Hoffman",
+    "spriteBase": "Dustin-Hoffman",
+    "highlightedSuffix": "-hilighted",
+    "blueSuffix": "-blue"
+  },
+  {
+    "id": 6,
+    "name": "Jennifer-Aniston",
+    "spriteBase": "Jennifer-Aniston",
+    "highlightedSuffix": "-hilighted",
+    "blueSuffix": "-blue"
+  },
+  {
+    "id": 7,
+    "name": "Kate-Hudson",
+    "spriteBase": "Kate-Hudson",
+    "highlightedSuffix": "-hilighted",
+    "blueSuffix": "-blue"
+  },
+  {
+    "id": 8,
+    "name": "Robin-Williams",
+    "spriteBase": "Robin-Williams",
+    "highlightedSuffix": "-hilighted",
+    "blueSuffix": "-blue"
+  },
+  {
+    "id": 9,
+    "name": "Jodie-Foster",
+    "spriteBase": "Jodie-Foster",
+    "highlightedSuffix": "-hilighted",
+    "blueSuffix": "-blue"
+  },
+  {
+    "id": 10,
+    "name": "Christian-Bale",
+    "spriteBase": "Christian-Bale",
+    "highlightedSuffix": "-hilighted",
+    "blueSuffix": "-blue"
+  },
+  {
+    "id": 11,
+    "name": "Anne-Hathaway",
+    "spriteBase": "Anne-Hathaway",
+    "highlightedSuffix": "-hilighted",
+    "blueSuffix": "-blue"
+  },
+  {
+    "id": 12,
+    "name": "Eddie-Murphy",
+    "spriteBase": "Eddie-Murphy",
+    "highlightedSuffix": "-hilighted",
+    "blueSuffix": "-blue"
+  },
+  {
+    "id": 13,
+    "name": "Angelina-Jolie",
+    "spriteBase": "Angelina-Jolie",
+    "highlightedSuffix": "-hilighted",
+    "blueSuffix": "-blue"
+  },
+  {
+    "id": 14,
+    "name": "Matthew-McConaughey",
+    "spriteBase": "Matthew-McConaughey",
+    "highlightedSuffix": "-hilighted",
+    "blueSuffix": "-blue"
+  },
+  {
+    "id": 15,
+    "name": "Michael-Keaton",
+    "spriteBase": "Michael-Keaton",
+    "highlightedSuffix": "-hilighted",
+    "blueSuffix": "-blue"
+  },
+  {
+    "id": 16,
+    "name": "Hugh-Jackman",
+    "spriteBase": "Hugh-Jackman",
+    "highlightedSuffix": "-hilighted",
+    "blueSuffix": "-blue"
+  },
+  {
+    "id": 17,
+    "name": "Nicolas-Cage",
+    "spriteBase": "Nicolas-Cage",
+    "highlightedSuffix": "-hilighted",
+    "blueSuffix": "-blue"
+  },
+  {
+    "id": 18,
+    "name": "George-Clooney",
+    "spriteBase": "George-Clooney",
+    "highlightedSuffix": "-hilighted",
+    "blueSuffix": "-blue"
+  },
+  {
+    "id": 19,
+    "name": "Meryl-Streep",
+    "spriteBase": "Meryl-Streep",
+    "highlightedSuffix": "-hilighted",
+    "blueSuffix": "-blue"
+  },
+  {
+    "id": 20,
+    "name": "Cate-Blanchett",
+    "spriteBase": "Cate-Blanchett",
+    "highlightedSuffix": "-hilighted",
+    "blueSuffix": "-blue"
+  },
+  {
+    "id": 21,
+    "name": "Tom-Cruise",
+    "spriteBase": "Tom-Cruise",
+    "highlightedSuffix": "-hilighted",
+    "blueSuffix": "-blue"
+  },
+  {
+    "id": 22,
+    "name": "Will-Smith",
+    "spriteBase": "Will-Smith",
+    "highlightedSuffix": "-hilighted",
+    "blueSuffix": "-blue"
+  },
+  {
+    "id": 23,
+    "name": "Jack-Black",
+    "spriteBase": "Jack-Black",
+    "highlightedSuffix": "-hilighted",
+    "blueSuffix": "-blue"
+  },
+  {
+    "id": 24,
+    "name": "Adam-Sandler",
+    "spriteBase": "Adam-Sandler",
+    "highlightedSuffix": "-hilighted",
+    "blueSuffix": "-blue"
+  },
+  {
+    "id": 25,
+    "name": "Jackie-Chan",
+    "spriteBase": "Jackie-Chan",
+    "highlightedSuffix": "-hilighted",
+    "blueSuffix": "-blue"
+  },
+  {
+    "id": 26,
+    "name": "Clive-Owen",
+    "spriteBase": "Clive-Owen",
+    "highlightedSuffix": "-hilighted",
+    "blueSuffix": "-blue"
+  },
+  {
+    "id": 27,
+    "name": "Hugh-Grant",
+    "spriteBase": "Hugh-Grant",
+    "highlightedSuffix": "-hilighted",
+    "blueSuffix": "-blue"
+  },
+  {
+    "id": 28,
+    "name": "Jack-Nicholson",
+    "spriteBase": "Jack-Nicholson",
+    "highlightedSuffix": "-hilighted",
+    "blueSuffix": "-blue"
+  },
+  {
+    "id": 29,
+    "name": "Nicole-Kidman",
+    "spriteBase": "Nicole-Kidman",
+    "highlightedSuffix": "-hilighted",
+    "blueSuffix": "-blue"
+  },
+  {
+    "id": 30,
+    "name": "Robert-De-Niro",
+    "spriteBase": "Robert-De-Niro",
+    "highlightedSuffix": "-hilighted",
+    "blueSuffix": "-blue"
+  },
+  {
+    "id": 31,
+    "name": "Steve-Carell",
+    "spriteBase": "Steve-Carell",
+    "highlightedSuffix": "-hilighted",
+    "blueSuffix": "-blue"
+  },
+  {
+    "id": 32,
+    "name": "Jake-Gyllenhaal",
+    "spriteBase": "Jake-Gyllenhaal",
+    "highlightedSuffix": "-hilighted",
+    "blueSuffix": "-blue"
+  },
+  {
+    "id": 33,
+    "name": "Ben-Stiller",
+    "spriteBase": "Ben-Stiller",
+    "highlightedSuffix": "-hilighted",
+    "blueSuffix": "-blue"
+  },
+  {
+    "id": 34,
+    "name": "Keira-Knightley",
+    "spriteBase": "Keira-Knightley",
+    "highlightedSuffix": "-hilighted",
+    "blueSuffix": "-blue"
+  },
+  {
+    "id": 35,
+    "name": "Daniel-Craig",
+    "spriteBase": "Daniel-Craig",
+    "highlightedSuffix": "-hilighted",
+    "blueSuffix": "-blue"
+  },
+  {
+    "id": 36,
+    "name": "Gwyneth-Paltrow",
+    "spriteBase": "Gwyneth-Paltrow",
+    "highlightedSuffix": "-hilighted",
+    "blueSuffix": "-blue"
+  },
+  {
+    "id": 37,
+    "name": "Russell-Crowe",
+    "spriteBase": "Russell-Crowe",
+    "highlightedSuffix": "-hilighted",
+    "blueSuffix": "-blue"
+  },
+  {
+    "id": 38,
+    "name": "Sean-Penn",
+    "spriteBase": "Sean-Penn",
+    "highlightedSuffix": "-hilighted",
+    "blueSuffix": "-blue"
+  },
+  {
+    "id": 39,
+    "name": "Anthony-Hopkins",
+    "spriteBase": "Anthony-Hopkins",
+    "highlightedSuffix": "-hilighted",
+    "blueSuffix": "-blue"
+  },
+  {
+    "id": 40,
+    "name": "Clint-Eastwood",
+    "spriteBase": "Clint-Eastwood",
+    "highlightedSuffix": "-hilighted",
+    "blueSuffix": "-blue"
+  },
+  {
+    "id": 41,
+    "name": "Edward-Norton",
+    "spriteBase": "Edward-Norton",
+    "highlightedSuffix": "-hilighted",
+    "blueSuffix": "-blue"
+  },
+  {
+    "id": 42,
+    "name": "Keanu-Reeves",
+    "spriteBase": "Keanu-Reeves",
+    "highlightedSuffix": "-hilighted",
+    "blueSuffix": "-blue"
+  },
+  {
+    "id": 43,
+    "name": "Richard-Gere",
+    "spriteBase": "Richard-Gere",
+    "highlightedSuffix": "-hilighted",
+    "blueSuffix": "-blue"
+  },
+  {
+    "id": 44,
+    "name": "Mel-Gibson",
+    "spriteBase": "Mel-Gibson",
+    "highlightedSuffix": "-hilighted",
+    "blueSuffix": "-blue"
+  },
+  {
+    "id": 45,
+    "name": "Sacha-Baron-Cohen",
+    "spriteBase": "Sacha-Baron-Cohen",
+    "highlightedSuffix": "-hilighted",
+    "blueSuffix": "-blue"
+  },
+  {
+    "id": 46,
+    "name": "Charlize-Theron",
+    "spriteBase": "Charlize-Theron",
+    "highlightedSuffix": "-hilighted",
+    "blueSuffix": "-blue"
+  },
+  {
+    "id": 47,
+    "name": "Halle-Berry",
+    "spriteBase": "Halle-Berry",
+    "highlightedSuffix": "-hilighted",
+    "blueSuffix": "-blue"
+  },
+  {
+    "id": 48,
+    "name": "Bruce-Willis",
+    "spriteBase": "Bruce-Willis",
+    "highlightedSuffix": "-hilighted",
+    "blueSuffix": "-blue"
+  },
+  {
+    "id": 49,
+    "name": "Penelope-Cruz",
+    "spriteBase": "Penelope-Cruz",
+    "highlightedSuffix": "-hilighted",
+    "blueSuffix": "-blue"
+  },
+  {
+    "id": 50,
+    "name": "Sandra-Bullock",
+    "spriteBase": "Sandra-Bullock",
+    "highlightedSuffix": "-hilighted",
+    "blueSuffix": "-blue"
+  },
+  {
+    "id": 51,
+    "name": "Daniel-Day-Lewis",
+    "spriteBase": "Daniel-Day-Lewis",
+    "highlightedSuffix": "-hilighted",
+    "blueSuffix": "-blue"
+  },
+  {
+    "id": 52,
+    "name": "Brad-Pitt",
+    "spriteBase": "Brad-Pitt",
+    "highlightedSuffix": "-hilighted",
+    "blueSuffix": "-blue"
+  },
+  {
+    "id": 53,
+    "name": "Will-Ferrell",
+    "spriteBase": "Will-Ferrell",
+    "highlightedSuffix": "-hilighted",
+    "blueSuffix": "-blue"
+  },
+  {
+    "id": 54,
+    "name": "Natalie-Portman",
+    "spriteBase": "Natalie-Portman",
+    "highlightedSuffix": "-hilighted",
+    "blueSuffix": "-blue"
+  },
+  {
+    "id": 55,
+    "name": "Johnny-Depp",
+    "spriteBase": "Johnny-Depp",
+    "highlightedSuffix": "-hilighted",
+    "blueSuffix": "-blue"
+  },
+  {
+    "id": 56,
+    "name": "Cameron-Diaz",
+    "spriteBase": "Cameron-Diaz",
+    "highlightedSuffix": "-hilighted",
+    "blueSuffix": "-blue"
+  },
+  {
+    "id": 57,
+    "name": "Matt-Damon",
+    "spriteBase": "Matt-Damon",
+    "highlightedSuffix": "-hilighted",
+    "blueSuffix": "-blue"
+  },
+  {
+    "id": 58,
+    "name": "Kate-Winslet",
+    "spriteBase": "Kate-Winslet",
+    "highlightedSuffix": "-hilighted",
+    "blueSuffix": "-blue"
+  },
+  {
+    "id": 59,
+    "name": "Renee-Zellweger",
+    "spriteBase": "Renee-Zellweger",
+    "highlightedSuffix": "-hilighted",
+    "blueSuffix": "-blue"
+  },
+  {
+    "id": 60,
+    "name": "Scarlett-Johansson",
+    "spriteBase": "Scarlett-Johansson",
+    "highlightedSuffix": "-hilighted",
+    "blueSuffix": "-blue"
+  },
+  {
+    "id": 61,
+    "name": "Catherine-Zeta-Jones",
+    "spriteBase": "Catherine-Zeta-Jones",
+    "highlightedSuffix": "-hilighted",
+    "blueSuffix": "-blue"
+  },
+  {
+    "id": 62,
+    "name": "Denzel-Washington",
+    "spriteBase": "Denzel-Washington",
+    "highlightedSuffix": "-hilighted",
+    "blueSuffix": "-blue"
+  },
+  {
+    "id": 63,
+    "name": "Harrison-Ford",
+    "spriteBase": "Harrison-Ford",
+    "highlightedSuffix": "-hilighted",
+    "blueSuffix": "-blue"
+  },
+  {
+    "id": 64,
+    "name": "Julia-Roberts",
+    "spriteBase": "Julia-Roberts",
+    "highlightedSuffix": "-hilighted",
+    "blueSuffix": "-blue"
+  },
+  {
+    "id": 65,
+    "name": "Reese-Witherspoon",
+    "spriteBase": "Reese-Witherspoon",
+    "highlightedSuffix": "-hilighted",
+    "blueSuffix": "-blue"
+  },
+  {
+    "id": 66,
+    "name": "Tom-Hanks",
+    "spriteBase": "Tom-Hanks",
+    "highlightedSuffix": "-hilighted",
+    "blueSuffix": "-blue"
+  },
+  {
+    "id": 67,
+    "name": "Jim-Carrey",
+    "spriteBase": "Jim-Carrey",
+    "highlightedSuffix": "-hilighted",
+    "blueSuffix": "-blue"
+  },
+  {
+    "id": 68,
+    "name": "Leonardo-DiCaprio",
+    "spriteBase": "Leonardo-DiCaprio",
+    "highlightedSuffix": "-hilighted",
+    "blueSuffix": "-blue"
+  },
+  {
+    "id": 69,
+    "name": "Hilary-Swank",
+    "spriteBase": "Hilary-Swank",
+    "highlightedSuffix": "-hilighted",
+    "blueSuffix": "-blue"
+  },
+  {
+    "id": 70,
+    "name": "Mark-Wahlberg",
+    "spriteBase": "Mark-Wahlberg",
+    "highlightedSuffix": "-hilighted",
+    "blueSuffix": "-blue"
+  }
+]
