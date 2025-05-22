@@ -43,8 +43,39 @@ public class GameViewController: UIViewController, GameSceneDelegate, GameViewDe
             // Update scoreLabel whenever score changes
             // This simplifies updateLabels()
             scoreLabel?.text = "\(score)"
+
+            // Check for new high-score every time the score changes so we can
+            // keep the persisted value in sync and inform the player.
+            if score > highScore {
+                highScore = score
+            }
         }
     }
+
+    // MARK: - High-Score persistence
+
+    /// Key used with `UserDefaults` for persisting the best score between app sessions.
+    private let highScoreKey = "CelebrityCrunchHighScoreKey"
+
+    /// The best score achieved on the device across all game sessions. Whenever the
+    /// value is increased we write it back to `UserDefaults` so it is automatically
+    /// restored the next time the game launches.
+    private var highScore: Int = 0 {
+        didSet {
+            guard oldValue != highScore else { return }
+
+            // Persist the new value
+            UserDefaults.standard.set(highScore, forKey: highScoreKey)
+
+            // Visually update an optional high-score label if the developer has
+            // added one to the storyboard and hooked it up.
+            highScoreLabel?.text = "High-Score: \(highScore)"
+        }
+    }
+
+    /// Optional outlet that can be added in Interface Builder to show the high-score.
+    /// The game will still compile and run even if the label is not connected.
+    @IBOutlet private weak var highScoreLabel: UILabel?
     // `movesLeft` was not in the original Obj-C properties, but typical for such games. Omitting for now.
 
     // Core game components (now Swift versions)
@@ -66,7 +97,11 @@ public class GameViewController: UIViewController, GameSceneDelegate, GameViewDe
     override public func viewDidLoad() {
         super.viewDidLoad()
 
-        // Initialize score
+        // Load high-score from persistent storage before the first game begins so
+        // that UI is already up-to-date when we call `updateLabels()` later.
+        self.highScore = UserDefaults.standard.integer(forKey: highScoreKey)
+
+        // Initialize score for the fresh game session
         self.score = 0
         
         // Configure the view (SKView)
@@ -201,6 +236,12 @@ public class GameViewController: UIViewController, GameSceneDelegate, GameViewDe
         let removedActorSet = level.removeMatches() // Removes matched actors from level model, returns them
         
         if !removedActorSet.isEmpty {
+            // Provide subtle haptic feedback to acknowledge a successful match on
+            // devices that support the Taptic Engine. This improves the tactile
+            // feel of the game without affecting devices that lack the hardware.
+            if #available(iOS 10.0, *) {
+                UIImpactFeedbackGenerator(style: .medium).impactOccurred()
+            }
             scene.view?.isUserInteractionEnabled = false // Disable interaction during animations
             
             scene.animateMatchedActors(removedActorSet) { [weak self] in
@@ -247,6 +288,9 @@ public class GameViewController: UIViewController, GameSceneDelegate, GameViewDe
         } else {
             self.movieLabel?.text = ""
         }
+
+        // Update high-score UI (if present)
+        highScoreLabel?.text = "High-Score: \(highScore)"
     }
     
     // --- Movie Panel Animation ---

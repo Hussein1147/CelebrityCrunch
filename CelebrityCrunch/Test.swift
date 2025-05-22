@@ -5,10 +5,6 @@ import Foundation
         print("Hello from Swift!")
     }
 
-    /// Simple interoperability test that accesses Objective-C classes.
-    /// Marked `@MainActor` because we interact with `AppDelegate`, which is
-    /// implicitly main-actor–isolated under Swift Concurrency rules.
-    @MainActor
     @objc func testObjC() {
         // Assuming AppDelegate is imported via the bridging header
         let appDelegate = AppDelegate()
